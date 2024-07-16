@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
-import React, { useEffect, useState } from "react";
-import { Dark, Light } from "../data/Themes";
+import React, { useState } from "react";
+import { ActivePage } from "../data/ActivePage";
+import { MyInfo } from "../data/MyInfo";
+import { Dark, GreyScale, Light } from "../data/Themes";
 
 NavBar.propTypes = {
   changeTheme: PropTypes.func.isRequired,
@@ -9,48 +11,65 @@ NavBar.propTypes = {
 
 export default function NavBar(props) {
   const [activeTheme, setActiveTheme] = useState(props.theme);
+  const [page] = useState(ActivePage);
 
   const changeThemeNav = (event) => {
     if (event) {
-      if (activeTheme == Dark) {
-        setActiveTheme(Light);
-        props.changeTheme(Light);
-        return;
-      } else {
-        setActiveTheme(Dark);
-        props.changeTheme(Dark);
+      let new_theme = null;
+      switch (event.target.value) {
+        case "Dark":
+          new_theme = Dark;
+          break;
+        case "Light":
+          new_theme = Light;
+          break;
+        case "B+W":
+          new_theme = GreyScale;
+          break;
+        default:
+          return;
       }
+      setActiveTheme(new_theme);
+      props.changeTheme(new_theme);
     }
   };
 
-  useEffect(() => {
-    console.log("NavBar -> activeTheme", activeTheme);
-  }, [activeTheme]);
-
   return (
     <nav
-      className="flex items-center justify-between p-4"
-      style={{ backgroundColor: activeTheme.nav.bg }}
+      className={
+        "flex items-center justify-between p-4" + activeTheme.nav.inlineCSS
+      }
     >
       <div className="flex items-center space-x-4">
-        <a href="#" className="text-lg font-bold">
-          Logo
-        </a>
-        <a href="#" className="hidden md:block">
+        <div className="cursor-default text-lg font-bold">Logo</div>
+        <a href={page.url.dev} className="hidden md:block">
           Home
         </a>
-        <button onClick={changeThemeNav} className="md:block">
-          {activeTheme.name == "light" ? "dark" : "light"}
-        </button>
       </div>
       <div className="flex items-center space-x-4">
-        <a href="#" className="hidden md:block">
-          Contact
+        <a
+          href={MyInfo.urls.github}
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:block"
+        >
+          GitHub
         </a>
-        <select className="hidden md:block">
-          <option>English</option>
-          <option>Spanish</option>
-          <option>French</option>
+        <a
+          href={MyInfo.urls.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          className="hidden md:block"
+        >
+          LinkedIn
+        </a>
+        <select
+          onChange={changeThemeNav}
+          className={"hidden md:block" + activeTheme.nav_btn.inlineCSS}
+        >
+          <option>Dark</option>
+          <option>Light</option>
+          <option>B+W</option>
         </select>
         <button className="block md:hidden">
           <svg

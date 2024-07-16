@@ -3,6 +3,7 @@ export class Style {
     this.el = el;
     this.fg = fg;
     this.bg = bg;
+    this.inlineCSS = " " + fg + " " + bg;
     this.style = style;
   }
 
@@ -44,5 +45,13 @@ export class Style {
 
   setStyle(style) {
     this.style = style;
+  }
+
+  getInlineCSS() {
+    return this.inlineCSS;
+  }
+
+  setInlineCSS(inlineCSS) {
+    this.inlineCSS = inlineCSS;
   }
 }
