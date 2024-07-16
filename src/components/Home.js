@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const my_info = {
   name: "Michael Beebe",
   email: "michaelbeebe1031@gmail.com",
@@ -9,12 +11,17 @@ const my_info = {
   },
 };
 
-function Home() {
+Home.propTypes = {
+  theme: PropTypes.object.isRequired,
+};
+
+export default function Home(props) {
+  const theme = props.theme;
+  console.log("Home -> theme", theme);
+
   return (
     <div className="m-0 bg-gray-400 p-2">
       <h1>Welcome to the Home Page!</h1>
     </div>
   );
 }
-
-export default Home;
