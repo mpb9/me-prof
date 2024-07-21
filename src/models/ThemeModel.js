@@ -1,24 +1,19 @@
 export class Theme {
-  constructor(name, main, nav, nav_btn) {
-    this.name = name;
+  constructor(main, nav, footer) {
     this.main = main;
     this.nav = nav;
-    this.nav_btn = nav_btn;
+    this.footer = footer;
   }
 
-  getName() {
-    return this.name;
+  setMain(main) {
+    this.main = main;
   }
 
-  getMain() {
-    return this.main;
+  setNav(nav) {
+    this.nav = nav;
   }
 
-  getNav() {
-    return this.nav;
-  }
-
-  getNavBtn() {
-    return this.nav_btn;
+  setFooter(footer) {
+    this.footer = footer;
   }
 }

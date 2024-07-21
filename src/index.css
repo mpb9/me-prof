@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Martian';
+    src: url('/src/static/fonts/MartianMono/MartianMonoNerdFont-Regular.ttf');
+  }
+  ,
+  @font-face {
+    font-family: '3270';
+    src: url('/src/static/fonts/3270/3270NerdFont-Regular.ttf');
+    font-weight: bold;
+  }
+  ,
+  @font-face {
+    font-family: 'ProFont';
+    src: url('/src/static/fonts/ProFont/ProFontIIxNerdFont-Regular.ttf');
+    font-weight: bold;
+  }
+
+  :root {
+    --font-family-sans: 'Martian', sans-serif;
+    --font-family-serif: '3270', serif;
+    --font-family-mono: 'ProFont', monospace;
+
+    font-family: var(--font-family-sans);
+  }
+}
