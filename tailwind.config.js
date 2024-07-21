@@ -12,6 +12,19 @@ module.exports = {
       borderWidth: {
         3: '3px',
       },
+      height: {
+        '1/8': '12.5%',
+        '1/10': '10%',
+        '2/10': '20%',
+        '3/10': '30%',
+        '4/10': '40%',
+        '7/8': '87.5%',
+        '5/8': '62.5%',
+        '3/8': '37.5%',
+      },
+      width: {
+        '1/8': '12.5%',
+      },
     },
     colors: ({ colors }) => ({
       // MARK: Default TailwindCSS colors
@@ -201,5 +214,32 @@ module.exports = {
       },
     }),
   },
-  plugins: [require('flowbite/plugin')],
+  daisyui: {
+    styled: true,
+    themes: [
+      {
+        movies: {
+          primary: '#FFF3C5',
+          'primary-content': '#16140E',
+          secondary: '#E49648',
+          'secondary-content': '#16140E',
+          accent: '#61DCFC',
+          'accent-content': '#16140E',
+          neutral: '#633701',
+          'neutral-content': '#FFF3C5',
+          'base-100': '#16140E',
+          'base-200': '#633701',
+          'base-300': '#00658E',
+          info: '#2094f3',
+          success: '#009485',
+          warning: '#ff9900',
+          error: '#ff5724',
+        },
+      },
+    ],
+    base: true,
+    utils: true,
+    logs: true,
+  },
+  plugins: [require('daisyui')],
 };
