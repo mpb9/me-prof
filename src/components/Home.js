@@ -1,20 +1,15 @@
-const my_info = {
-  name: "Michael Beebe",
-  email: "michaelbeebe1031@gmail.com",
-  phone: "847-274-3448",
-  location: "Atlanta, GA",
-  urls: {
-    linkedin: "https://www.linkedin.com/in/michaelbeebe9/",
-    github: "https://github.com/mpb9",
-  },
+import PropTypes from 'prop-types';
+
+Home.propTypes = {
+  theme: PropTypes.object.isRequired,
 };
 
-function Home() {
+export default function Home(props) {
+  const { theme } = props;
+
   return (
-    <div className="m-0 bg-gray-400 p-2">
-      <h1>Welcome to the Home Page!</h1>
+    <div className={'m-0 bg-gray-400 p-2 pt-16' + theme.main.main_tw}>
+      <h1 className='bg-inherit p-1 font-bold'>Welcome to the Home Page!</h1>
     </div>
   );
 }
-
-export default Home;
