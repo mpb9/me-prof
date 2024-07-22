@@ -256,6 +256,7 @@ module.exports = {
           'secondary-content': '#16140E',
           accent: '#61DCFC',
           'accent-content': '#C1E6EF',
+          neutral: '#DC8B23',
           'neutral-content': '#F4C187',
           'base-100': '#16140E',
           'base-200': '#633701',
