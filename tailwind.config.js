@@ -52,6 +52,10 @@ module.exports = {
         'bright-right':
           'rgba(254, 242, 197, 0.5) 5px 0px, rgba(254, 242, 197, 0.4) 10px 0px, rgba(254, 242, 197, 0.3) 15px 0px',
       },
+      clipPath: {
+        'marquee-l': 'polygon(0 4%, 100% 0, 100% 98%, 0 100%)',
+        'marquee-r': 'polygon(0 0, 100% 4%, 100% 100%, 0 96%)',
+      },
     },
     colors: ({ colors }) => ({
       // MARK: Default TailwindCSS colors
