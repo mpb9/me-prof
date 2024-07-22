@@ -1,11 +1,12 @@
 import React from 'react';
+import TheaterEntrance from './TheaterEntrance.js';
 import TheaterOverhang from './TheaterOverhang.js';
 
 export default function TheaterFacade() {
   return (
-    <div className='h-screen'>
+    <div className='h-screen bg-[#ccc2bb]'>
       <TheaterOverhang />
-      <h1>TheaterFacade</h1>
+      <TheaterEntrance />
     </div>
   );
 }

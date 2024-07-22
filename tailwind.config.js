@@ -21,9 +21,36 @@ module.exports = {
         '7/8': '87.5%',
         '5/8': '62.5%',
         '3/8': '37.5%',
+        '5/12': '41.666667%',
+        '1/12': '8.333333%',
+        '1/15': '6.666667%',
       },
       width: {
         '1/8': '12.5%',
+        '1/10': '10%',
+        '2/10': '20%',
+        '3/10': '30%',
+        '4/10': '40%',
+        '7/8': '87.5%',
+        '5/8': '62.5%',
+        '3/8': '37.5%',
+        '5/12': '41.666667%',
+        '1/12': '8.333333%',
+        '1/15': '6.666667%',
+      },
+      backgroundImage: {
+        'brick-wall': "url('/src/static/imgs/BrickWall.png')",
+      },
+      boxShadow: {
+        test: 'rgba(240, 46, 170, 0.8) 0px -5px, rgba(240, 46, 170, 0.7) 0px -10px, rgba(240, 46, 170, 0.6) 0px -15px, rgba(240, 46, 170, 04) 0px -20px, rgba(240, 46, 170, 0.3) 0px -25px',
+        'bright-top':
+          'rgba(254, 242, 197, 0.8) 0px 0px, rgba(254, 242, 197, 0.5) 0px -5px, rgba(254, 242, 197, 0.4) 0px -10px, rgba(254, 242, 197, 0.3) 0px -15px',
+        'bright-bottom':
+          'rgba(254, 242, 197, 0.5) 0px 5px, rgba(254, 242, 197, 0.4) 0px 10px, rgba(254, 242, 197, 0.3) 0px 15px',
+        'bright-left':
+          'rgba(254, 242, 197, 0.5) -5px 0px, rgba(254, 242, 197, 0.4) -10px 0px, rgba(254, 242, 197, 0.3) -15px 0px',
+        'bright-right':
+          'rgba(254, 242, 197, 0.5) 5px 0px, rgba(254, 242, 197, 0.4) 10px 0px, rgba(254, 242, 197, 0.3) 15px 0px',
       },
     },
     colors: ({ colors }) => ({
@@ -224,9 +251,8 @@ module.exports = {
           secondary: '#E49648',
           'secondary-content': '#16140E',
           accent: '#61DCFC',
-          'accent-content': '#16140E',
-          neutral: '#633701',
-          'neutral-content': '#FFF3C5',
+          'accent-content': '#C1E6EF',
+          'neutral-content': '#F4C187',
           'base-100': '#16140E',
           'base-200': '#633701',
           'base-300': '#00658E',
