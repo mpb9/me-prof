@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', 'node_modules/flowbite-react/lib/esm/**/*.js'],
   theme: {
@@ -8,9 +10,12 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    // MARK: Extend TailwindCSS
     extend: {
       borderWidth: {
         3: '3px',
+        6: '6px',
+        '3-rem': '3rem',
       },
       height: {
         '1/8': '12.5%',
@@ -24,6 +29,8 @@ module.exports = {
         '5/12': '41.666667%',
         '1/12': '8.333333%',
         '1/15': '6.666667%',
+        '13.5p': '13.5%',
+        15: '15%',
       },
       width: {
         '1/8': '12.5%',
@@ -42,7 +49,11 @@ module.exports = {
         'brick-wall': "url('/src/static/imgs/BrickWall.png')",
       },
       boxShadow: {
-        test: 'rgba(240, 46, 170, 0.8) 0px -5px, rgba(240, 46, 170, 0.7) 0px -10px, rgba(240, 46, 170, 0.6) 0px -15px, rgba(240, 46, 170, 04) 0px -20px, rgba(240, 46, 170, 0.3) 0px -25px',
+        'neon-yellow-in': '0 0 15px 0px yellow inset',
+        'neon-top':
+          '0px -3px 2px 0px #0090ff88, 0px -5px 1px 1px #fffd, 0 -6px 3px 4px #619efcdd, 0 2px 3px 1px #fffc inset, 0 3px 4px 1px #619efcdd inset',
+        'dim-in': '0px 0px 10px 1px black inset',
+        dim: 'rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px',
         'bright-top':
           'rgba(254, 242, 197, 0.8) 0px 0px, rgba(254, 242, 197, 0.5) 0px -5px, rgba(254, 242, 197, 0.4) 0px -10px, rgba(254, 242, 197, 0.3) 0px -15px',
         'bright-bottom':
@@ -56,6 +67,13 @@ module.exports = {
         'marquee-l': 'polygon(0 4%, 100% 0, 100% 98%, 0 100%)',
         'marquee-r': 'polygon(0 0, 100% 4%, 100% 100%, 0 96%)',
       },
+      textShadow: {
+        'neon-blue': '0 0 1px #ffffff88, 0 0 4px #0000ff, 0 0 0.5em #61dcfc',
+        'neon-blue-intense':
+          '0 0 1.5px #ffffff, 0 0 2px #61dcfc, 0 0 1em #0055ffcc, 0 0 2em #0055ffcc, 0 0 3em #0022ff88',
+        'neon-orange': '0 0 1px #ffffff, 0 0 3px #ff888888, 0 0 6px #ffff44cf',
+        'neon-orange-intense': '0px 0px 2px #ffff00, 0 0 0.25em #8a5d1c, 0 0 0.5em #8a5d1c',
+      },
     },
     colors: ({ colors }) => ({
       // MARK: Default TailwindCSS colors
@@ -64,19 +82,7 @@ module.exports = {
       transparent: 'transparent',
       black: '#000',
       white: '#fff',
-      slate: {
-        50: '#f8fafc',
-        100: '#f1f5f9',
-        200: '#e2e8f0',
-        300: '#cbd5e1',
-        400: '#94a3b8',
-        500: '#64748b',
-        600: '#475569',
-        700: '#334155',
-        800: '#1e293b',
-        900: '#0f172a',
-        950: '#020617',
-      },
+      slate: colors.slate,
       gray: colors.gray,
       zinc: colors.zinc,
       neutral: colors.neutral,
@@ -88,136 +94,16 @@ module.exports = {
       lime: colors.lime,
       green: colors.green,
       emerald: colors.emerald,
-      teal: {
-        50: '#f0fdfa',
-        100: '#ccfbf1',
-        200: '#99f6e4',
-        300: '#5eead4',
-        400: '#2dd4bf',
-        500: '#14b8a6',
-        600: '#0d9488',
-        700: '#0f766e',
-        800: '#115e59',
-        900: '#134e4a',
-        950: '#042f2e',
-      },
-      cyan: {
-        50: '#ecfeff',
-        100: '#cffafe',
-        200: '#a5f3fc',
-        300: '#67e8f9',
-        400: '#22d3ee',
-        500: '#06b6d4',
-        600: '#0891b2',
-        700: '#0e7490',
-        800: '#155e75',
-        900: '#164e63',
-        950: '#083344',
-      },
-      sky: {
-        50: '#f0f9ff',
-        100: '#e0f2fe',
-        200: '#bae6fd',
-        300: '#7dd3fc',
-        400: '#38bdf8',
-        500: '#0ea5e9',
-        600: '#0284c7',
-        700: '#0369a1',
-        800: '#075985',
-        900: '#0c4a6e',
-        950: '#082f49',
-      },
-      blue: {
-        50: '#eff6ff',
-        100: '#dbeafe',
-        200: '#bfdbfe',
-        300: '#93c5fd',
-        400: '#60a5fa',
-        500: '#3b82f6',
-        600: '#2563eb',
-        700: '#1d4ed8',
-        800: '#1e40af',
-        900: '#1e3a8a',
-        950: '#172554',
-      },
-      indigo: {
-        50: '#eef2ff',
-        100: '#e0e7ff',
-        200: '#c7d2fe',
-        300: '#a5b4fc',
-        400: '#818cf8',
-        500: '#6366f1',
-        600: '#4f46e5',
-        700: '#4338ca',
-        800: '#3730a3',
-        900: '#312e81',
-        950: '#1e1b4b',
-      },
-      violet: {
-        50: '#f5f3ff',
-        100: '#ede9fe',
-        200: '#ddd6fe',
-        300: '#c4b5fd',
-        400: '#a78bfa',
-        500: '#8b5cf6',
-        600: '#7c3aed',
-        700: '#6d28d9',
-        800: '#5b21b6',
-        900: '#4c1d95',
-        950: '#2e1065',
-      },
-      purple: {
-        50: '#faf5ff',
-        100: '#f3e8ff',
-        200: '#e9d5ff',
-        300: '#d8b4fe',
-        400: '#c084fc',
-        500: '#a855f7',
-        600: '#9333ea',
-        700: '#7e22ce',
-        800: '#6b21a8',
-        900: '#581c87',
-        950: '#3b0764',
-      },
-      fuchsia: {
-        50: '#fdf4ff',
-        100: '#fae8ff',
-        200: '#f5d0fe',
-        300: '#f0abfc',
-        400: '#e879f9',
-        500: '#d946ef',
-        600: '#c026d3',
-        700: '#a21caf',
-        800: '#86198f',
-        900: '#701a75',
-        950: '#4a044e',
-      },
-      pink: {
-        50: '#fdf2f8',
-        100: '#fce7f3',
-        200: '#fbcfe8',
-        300: '#f9a8d4',
-        400: '#f472b6',
-        500: '#ec4899',
-        600: '#db2777',
-        700: '#be185d',
-        800: '#9d174d',
-        900: '#831843',
-        950: '#500724',
-      },
-      rose: {
-        50: '#fff1f2',
-        100: '#ffe4e6',
-        200: '#fecdd3',
-        300: '#fda4af',
-        400: '#fb7185',
-        500: '#f43f5e',
-        600: '#e11d48',
-        700: '#be123c',
-        800: '#9f1239',
-        900: '#881337',
-        950: '#4c0519',
-      },
+      teal: colors.teal,
+      cyan: colors.cyan,
+      sky: colors.sky,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      violet: colors.violet,
+      purple: colors.purple,
+      fuchsia: colors.fuchsia,
+      pink: colors.pink,
+      rose: colors.rose,
 
       // MARK: Custom colors
       light: {
@@ -245,6 +131,8 @@ module.exports = {
       },
     }),
   },
+
+  // MARK: DaisyUI
   daisyui: {
     styled: true,
     themes: [
@@ -252,7 +140,7 @@ module.exports = {
         movies: {
           primary: '#FFF3C5',
           'primary-content': '#16140E',
-          secondary: '#E49648',
+          secondary: '#42563f',
           'secondary-content': '#16140E',
           accent: '#61DCFC',
           'accent-content': '#C1E6EF',
@@ -272,5 +160,20 @@ module.exports = {
     utils: true,
     logs: true,
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('@nauverse/tailwind-dot-grid-backgrounds'),
+    require('daisyui'),
+    require('tailwindcss-border-image'),
+
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      );
+    }),
+  ],
 };

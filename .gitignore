@@ -25,6 +25,7 @@ yarn-error.log*
 package-lock.json
 tailwind-colors.png
 
+.vscode
 .vscode/*
 
 src/static/fonts/*

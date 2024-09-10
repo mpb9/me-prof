@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nauverse/tailwind-dot-grid-backgrounds": "^1.2.9",
     "@phosphor-icons/react": "^2.1.7",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
@@ -47,7 +48,8 @@
     "postcss": "^8.4.39",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "tailwindcss-border-image": "^1.1.2"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack"

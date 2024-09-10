@@ -3,28 +3,142 @@
 @tailwind utilities;
 
 @layer base {
+  /* MARK: font-faces */
   @font-face {
     font-family: 'Martian';
     src: url('/src/static/fonts/MartianMono/MartianMonoNerdFont-Regular.ttf');
   }
-  ,
   @font-face {
     font-family: '3270';
     src: url('/src/static/fonts/3270/3270NerdFont-Regular.ttf');
     font-weight: bold;
   }
-  ,
   @font-face {
     font-family: 'ProFont';
     src: url('/src/static/fonts/ProFont/ProFontIIxNerdFont-Regular.ttf');
     font-weight: bold;
   }
+  @font-face {
+    font-family: 'Blockletter';
+    src: url('/src/static/fonts/blockletter/Blockletter.otf');
+  }
+  @font-face {
+    font-family: 'Bebas';
+    src: url('/src/static/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Fascinate';
+    src: url('/src/static/fonts/Fascinate.ttf');
+  }
+
+  @font-face {
+    font-family: 'MarqueeNeon';
+    src: url('/src/static/fonts/ankh-sanctuary-font/AnkhSanctuary-PVK0B.ttf');
+  }
+
+  @font-face {
+    font-family: 'MarqueeTitle';
+    src: url('/src/static/fonts/NeonSpark-ovg0q.otf');
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
   :root {
-    --font-family-sans: 'Martian', sans-serif;
-    --font-family-serif: '3270', serif;
-    --font-family-mono: 'ProFont', monospace;
+    /* MARK: Fonts */
+    --font-marquee-neon: 'MarqueeNeon', sans-serif;
+    --font-marquee-title: 'MarqueeTitle', serif;
+    --font-martian: 'Martian', sans-serif;
+    --font-3270: '3270', serif;
+    --font-monspace: 'ProFont', monospace;
+    --font-block: 'Blockletter';
+    --font-bebas: 'Bebas', sans-serif;
+    --font-fascinate: 'Fascinate', sans-serif;
 
-    font-family: var(--font-family-sans);
+    font-family: var(--font-martian);
+    .my-font-marquee-neon {
+      font-family: var(--font-marquee-neon);
+    }
+    .my-font-marquee-title {
+      font-family: var(--font-marquee-title);
+    }
+
+    .my-font-martian {
+      font-family: var(--font-sans);
+    }
+    .my-font-3270 {
+      font-family: var(--font-3270);
+    }
+    .my-font-monospace {
+      font-family: var(--font-monospace);
+    }
+    .my-font-bebas {
+      font-family: var(--font-bebas);
+    }
+    .my-font-block {
+      font-family: var(--font-block);
+    }
+    .my-font-fascinate {
+      font-family: var(--font-fascinate);
+    }
+
+    /* MARK: Border Images */
+    .marquee-light-blue-x {
+      border-image: linear-gradient(0deg, rgba(3, 104, 129, 1) 0%, rgba(144, 241, 255, 1) 50%, rgba(3, 104, 129, 1) 100%) 1;
+    }
+    .marquee-light-blue-y {
+      border-image: linear-gradient(90deg, rgba(3, 104, 129, 1) 0%, #90f1ff 50%, rgba(3, 104, 129, 1) 100%) 1;
+    }
+    .marquee-light-yellow-x {
+      border-image: linear-gradient(0deg, #be8a0d 0%, #f2f28b 20%, #f2f28b 80%, #be8a0d 100%) 1;
+    }
+    .marquee-light-yellow-y {
+      border-image: linear-gradient(90deg, #be8a0d 0%, #f2f28b 20%, #f2f28b 80%, #be8a0d 100%) 1;
+    }
+    .marquee-light-orange-x {
+      border-image: linear-gradient(0deg, #943200 0%, #ffeb91 50%, #943200 100%) 1;
+    }
+    .marquee-light-orange-y {
+      border-image: linear-gradient(90deg, #943200 0%, #ffeb91 50%, #943200 100%) 1;
+    }
+    .neon-border {
+      border-image: linear-gradient(0deg, #0000ff 0%, #90f1ff 50%) 1;
+    }
+    .brick-wall-border {
+      border-image: url('/src/static/imgs/BrickWallSolid.png') 44 round;
+    }
+    .marquee-light-blue-x,
+    .marquee-light-blue-y,
+    .marquee-light-yellow-x,
+    .marquee-light-yellow-y,
+    .marquee-light-orange-x,
+    .marquee-light-orange-y,
+    .brick-wall-border {
+      border-style: solid;
+    }
+
+    .pattern-1-border {
+      border-image: url('/src/static/imgs/Pat3.png') 200 round;
+      border-style: solid;
+    }
+
+    /* MARK: Background Images */
+    .marque-lights-green-bg {
+      background-image: url('/src/static/imgs/MarqueeBgGreen.png');
+      background-size: 1.5vh;
+      background-position-y: -0.1vh;
+    }
+
+    .pattern-1 {
+      background-image: url('/src/static/imgs/Pattern2.5.png');
+      background-size: 100%;
+    }
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
