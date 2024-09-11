@@ -4,7 +4,7 @@ import TheaterEntrance from './TheaterEntrance.js';
 
 export default function TheaterFacade() {
   return (
-    <div className='h-screen bg-[#ccc2bb]'>
+    <div className='h-screen bg-[#eee3bd]'>
       <Marquee />
       <TheaterEntrance />
     </div>

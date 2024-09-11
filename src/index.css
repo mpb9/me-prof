@@ -108,7 +108,7 @@
       border-image: linear-gradient(0deg, #0000ff 0%, #90f1ff 50%) 1;
     }
     .brick-wall-border {
-      border-image: url('/src/static/imgs/BrickWallSolid.png') 44 round;
+      border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
     }
     .marquee-light-blue-x,
     .marquee-light-blue-y,
@@ -120,20 +120,20 @@
       border-style: solid;
     }
 
-    .pattern-1-border {
-      border-image: url('/src/static/imgs/Pat3.png') 200 round;
+    .string-light-border {
+      border-image: url('/src/static/imgs/StringLight.png') 200 round;
       border-style: solid;
     }
 
     /* MARK: Background Images */
-    .marque-lights-green-bg {
-      background-image: url('/src/static/imgs/MarqueeBgGreen.png');
+    .neon-green-light-bg {
+      background-image: url('/src/static/imgs/NeonGreenLight.png');
       background-size: 1.5vh;
       background-position-y: -0.1vh;
     }
 
-    .pattern-1 {
-      background-image: url('/src/static/imgs/Pattern2.5.png');
+    .marquee-pillar-bg {
+      background-image: url('/src/static/imgs/MarqueePillar.png');
       background-size: 100%;
     }
   }
