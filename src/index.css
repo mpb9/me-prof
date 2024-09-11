@@ -30,6 +30,14 @@
     font-family: 'Fascinate';
     src: url('/src/static/fonts/Fascinate.ttf');
   }
+  @font-face {
+    font-family: 'ElectroHolic';
+    src: url('/src/static/fonts/electro-holic-font/ElectroHolic.ttf');
+  }
+  @font-face {
+    font-family: 'NeonGlow';
+    src: url('/src/static/fonts/neon-glow-font/NeonGlowBold-YxJv.ttf');
+  }
 
   @font-face {
     font-family: 'MarqueeNeon';
@@ -57,6 +65,8 @@
     --font-block: 'Blockletter';
     --font-bebas: 'Bebas', sans-serif;
     --font-fascinate: 'Fascinate', sans-serif;
+    --font-electro-holic: 'ElectroHolic', sans-serif;
+    --font-neon-glow: 'NeonGlow', sans-serif;
 
     font-family: var(--font-martian);
     .my-font-marquee-neon {
@@ -83,6 +93,12 @@
     }
     .my-font-fascinate {
       font-family: var(--font-fascinate);
+    }
+    .my-font-electro {
+      font-family: var(--font-electro-holic);
+    }
+    .my-font-neon-glow {
+      font-family: var(--font-neon-glow);
     }
 
     /* MARK: Border Images */

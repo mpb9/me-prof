@@ -50,6 +50,8 @@ module.exports = {
       },
       boxShadow: {
         'neon-yellow-in': '0 0 15px 0px yellow inset',
+        'neon-yellow-out': '0 0 15px 0px yellow',
+        'neon-yellow-bottom': '0 0px 10px 0px #ffff00dd inset, 0 2px 2px 0.75px #f2f28b',
         'neon-top':
           '0px -3px 2px 0px #0090ff88, 0px -5px 1px 1px #fffd, 0 -6px 3px 4px #619efcdd, 0 2px 3px 1px #fffc inset, 0 3px 4px 1px #619efcdd inset',
         'dim-in': '0px 0px 10px 1px black inset',

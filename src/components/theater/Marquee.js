@@ -6,21 +6,40 @@ export default function Marquee() {
     <>
       {/* Sky  */}
       <div className='h-1/10 bg-gradient-to-t from-yellow-100 to-[#2c6277]'>
+        {/* Name */}
         <div
-          className='shadow-dim my-font-marquee-title text-shadow-neon-orange fixed z-[21] h-[9.5%] w-[54%] cursor-default rounded-t-lg border-b-2 border-[#f2f28b] bg-[#3A2A00] text-center text-7xl text-[#ff800d]'
+          className='shadow-neon-top fixed z-[21] h-[9.5%] w-[54%] cursor-default rounded-t-xl bg-[#3A2A00] pb-1 text-center ring-2 ring-inset ring-[#f2f28b] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl'
           style={{ top: '15%', left: '23%' }}>
-          Michael Beebe
+          <div
+            className='my-font-marquee-title text-shadow-neon-orange shadow-neon-yellow-bottom inline-flex w-full items-center justify-center text-[#ff800d]'
+            style={{ height: 'calc(100%)' }}>
+            Michael Beebe
+          </div>
         </div>
+
+        {/* Pillars */}
         <div
           className='marquee-pillar-bg fixed z-[22] h-[34%] w-[2.5em] rounded-b-xl rounded-tl-3xl rounded-tr-xl'
           style={{ top: '19%', left: '0%' }}></div>
         <div
           className='marquee-pillar-bg fixed z-[22] h-[38%] w-[3.5em] rounded-b-xl rounded-tl-3xl rounded-tr-xl'
           style={{ top: '14%', left: '23%' }}></div>
+
+        {/* Top Piece */}
         <div className='bg-secondary w-1/10 h-1/10 fixed rounded-t-full' style={{ left: '45%', top: '0%' }}></div>
+
+        {/* Spot Lights */}
         <div
-          className='bg-secondary fixed z-20 h-[14.5%] w-1/6 border-2 border-white'
-          style={{ top: '10%', left: '41.667%' }}></div>
+          className='bg-dot-1-s-1-amber-400 w-1/8 border-6 fixed z-20 h-[14.5%] border-r-8 border-solid border-[#3A2A00] bg-[#3A2A00]'
+          style={{ top: '10%', left: '28.5%' }}></div>
+        <div
+          className='bg-dot-1-s-1-amber-400 border-t-6 fixed z-20 h-[14.5%] w-[16%] border-8 border-solid border-[#3A2A00] bg-[#3A2A00]'
+          style={{ top: '8.5%', left: '42%' }}></div>
+        <div
+          className='bg-dot-1-s-1-amber-400 w-1/8 border-6 fixed z-20 h-[14.5%] border-l-8 border-solid border-[#3A2A00] bg-[#3A2A00]'
+          style={{ top: '10%', left: '59%' }}></div>
+
+        {/* Pillars */}
         <div
           className='marquee-pillar-bg shadow-dim fixed z-[22] h-[38%] w-[3.5em] rounded-b-xl rounded-tl-xl rounded-tr-3xl'
           style={{ top: '14%', right: '23%' }}></div>
