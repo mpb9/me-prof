@@ -47,6 +47,7 @@ module.exports = {
       },
       backgroundImage: {
         'brick-wall': "url('/src/static/imgs/BrickWall.png')",
+        'burger-boy': "url('/src/static/imgs/BurgerBoy.png')",
       },
       boxShadow: {
         'neon-yellow-in': '0 0 15px 0px yellow inset',

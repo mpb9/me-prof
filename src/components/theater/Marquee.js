@@ -26,7 +26,13 @@ export default function Marquee() {
           style={{ top: '14%', left: '23%' }}></div>
 
         {/* Top Piece */}
-        <div className='bg-secondary w-1/10 h-1/10 fixed rounded-t-full' style={{ left: '45%', top: '0%' }}></div>
+        <div
+          className='bg-secondary w-1/10 h-1/10 border-x-6 fixed rounded-t-full border-t-4 border-[#3A2A00]'
+          style={{ left: '45%', top: '0%' }}>
+          <div className='flex h-full w-full pb-4 pt-2'>
+            <div className='bg-burger-boy h-full w-full bg-contain bg-center bg-no-repeat'></div>
+          </div>
+        </div>
 
         {/* Spot Lights */}
         <div
