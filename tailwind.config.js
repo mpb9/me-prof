@@ -48,6 +48,23 @@ module.exports = {
       backgroundImage: {
         'brick-wall': "url('/src/static/imgs/BrickWall.png')",
         'burger-boy': "url('/src/static/imgs/BurgerBoy.png')",
+
+        'graphics-poster': "url('/src/static/imgs/posters/GraphicsPoster.png')",
+        'graphics-poster-wide': "url('/src/static/imgs/posters/GraphicsPosterWide.png')",
+
+        'dev-poster': "url('/src/static/imgs/posters/DevPoster.png')",
+        'dev-poster-wide': "url('/src/static/imgs/posters/DevPosterWide.png')",
+        'dev-poster-flipped': "url('/src/static/imgs/posters/DevPosterFlipped.png')",
+        'dev-poster-flipped-wide': "url('/src/static/imgs/posters/DevPosterFlippedWide.png')",
+
+        'stuff-poster': "url('/src/static/imgs/posters/StuffPoster.png')",
+        'stuff-poster-wide': "url('/src/static/imgs/posters/StuffPosterWide.png')",
+        'stuff-poster-flipped': "url('/src/static/imgs/posters/StuffPosterFlipped.png')",
+        'stuff-poster-flipped-wide': "url('/src/static/imgs/posters/StuffPosterFlippedWide.png')",
+
+        'dnc-poster': "url('/src/static/imgs/posters/DnCPoster.png')",
+        'dnc-poster-black': "url('/src/static/imgs/posters/DnCPosterBlack.png')",
+        'dnc-poster-wide': "url('/src/static/imgs/posters/DnCPosterWide.png')",
       },
       boxShadow: {
         'neon-yellow-in': '0 0 15px 0px yellow inset',
