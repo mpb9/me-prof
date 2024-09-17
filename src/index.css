@@ -102,27 +102,6 @@
     }
 
     /* MARK: Border Images */
-    .marquee-light-blue-x {
-      border-image: linear-gradient(0deg, rgba(3, 104, 129, 1) 0%, rgba(144, 241, 255, 1) 50%, rgba(3, 104, 129, 1) 100%) 1;
-    }
-    .marquee-light-blue-y {
-      border-image: linear-gradient(90deg, rgba(3, 104, 129, 1) 0%, #90f1ff 50%, rgba(3, 104, 129, 1) 100%) 1;
-    }
-    .marquee-light-yellow-x {
-      border-image: linear-gradient(0deg, #be8a0d 0%, #f2f28b 20%, #f2f28b 80%, #be8a0d 100%) 1;
-    }
-    .marquee-light-yellow-y {
-      border-image: linear-gradient(90deg, #be8a0d 0%, #f2f28b 20%, #f2f28b 80%, #be8a0d 100%) 1;
-    }
-    .marquee-light-orange-x {
-      border-image: linear-gradient(0deg, #943200 0%, #ffeb91 50%, #943200 100%) 1;
-    }
-    .marquee-light-orange-y {
-      border-image: linear-gradient(90deg, #943200 0%, #ffeb91 50%, #943200 100%) 1;
-    }
-    .neon-border {
-      border-image: linear-gradient(0deg, #0000ff 0%, #90f1ff 50%) 1;
-    }
     .brick-wall-border {
       border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
     }
@@ -151,6 +130,13 @@
     .marquee-pillar-bg {
       background-image: url('/src/static/imgs/MarqueePillar.png');
       background-size: 100%;
+    }
+
+    .top-piece-bg {
+      background: #fbbe24;
+      background: -moz-radial-gradient(center, #fbbe24 0%, #17140f 80%, #17140f 100%);
+      background: -webkit-radial-gradient(center, #fbbe24 0%, #17140f 80%, #17140f 100%);
+      background: radial-gradient(ellipse at center, #fbbe24 0%, #17140f 80%, #17140f 100%);
     }
   }
 

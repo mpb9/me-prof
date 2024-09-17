@@ -1,4 +1,6 @@
 import React from 'react';
+import Michael_Beebe_Resume from '../../static/docs/Michael_Beebe_Resume.pdf';
+import MarqueeDesc from './MarqueeDesc';
 import MarqueeMain from './MarqueeMain';
 
 export default function Marquee() {
@@ -27,7 +29,7 @@ export default function Marquee() {
 
         {/* Top Piece */}
         <div
-          className='bg-secondary w-1/10 h-1/10 border-x-6 fixed rounded-t-full border-t-4 border-[#3A2A00]'
+          className='top-piece-bg w-1/10 h-1/10 border-x-6 fixed rounded-t-full border-t-4 border-[#3A2A00]'
           style={{ left: '45%', top: '0%' }}>
           <div className='flex h-full w-full pb-4 pt-2'>
             <div className='bg-burger-boy h-full w-full bg-contain bg-center bg-no-repeat'></div>
@@ -58,29 +60,36 @@ export default function Marquee() {
         {/* Marquee Left */}
         <div className='bg-base-300 shadow-neon-top h-2/3 w-1/4 origin-top-right -skew-y-2'>
           <MarqueeMain text={'ABOUT'} />
-          <div className='bg-primary string-light-border shadow-neon-top h-3/5 w-full border-b-[1rem] p-4 text-stone-800'>
-            PERSONAL INFO
-          </div>
+          <MarqueeDesc
+            text={['LINKEDIN', 'GITHUB', 'RESUME (PDF)']}
+            action={[
+              'https://www.linkedin.com/in/michaelbeebe9/',
+              'https://github.com/mpb9',
+              Michael_Beebe_Resume,
+            ]}></MarqueeDesc>
         </div>
 
         {/* Marquee Center */}
         <div className='static z-10 h-2/3 w-1/2'>
           <div className='h-full w-full'>
             <MarqueeMain text={'NOW SHOWING...'} />
-
-            <div className='bg-primary string-light-border shadow-neon-top h-3/5 w-full border-b-[1rem] p-4 text-stone-800'>
-              RESUME, ETC
-            </div>
+            <MarqueeDesc
+              text={[
+                'FULL-STACK SOFTWARE ENGINEER',
+                'FORMERLY @ GENERAL MOTORS',
+                'UNC CHAPEL HILL: B.S. COMP SCI, B.A. ECON',
+              ]}
+              action={['none', 'none', 'none']}></MarqueeDesc>
           </div>
         </div>
 
         {/* Marquee Right */}
         <div className='bg-clip-border-marquee-r shadow-neon-top h-2/3 w-1/4 origin-top-left skew-y-2'>
-          <MarqueeMain text={'CATALOG'} />
-
-          <div className='bg-primary shadow-neon-top string-light-border h-3/5 w-full rounded-br-2xl border-b-[1rem] p-4 text-stone-800'>
-            WHAT IM UP TO
-          </div>
+          <MarqueeMain text={'CONTACT'} />
+          <MarqueeDesc text={['MICHAELBEEBE1031@GMAIL.COM', '847-274-3448']} action={['copy', 'copy']}></MarqueeDesc>
+          {/* <MarqueeDesc
+            text={['MICHAELBEEBE1031@GMAIL.COM', '847-274-3448', 'Brooklyn, NY']}
+            action={['copy', 'copy', 'none']}></MarqueeDesc> */}
         </div>
       </div>
     </>
