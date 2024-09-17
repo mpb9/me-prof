@@ -74,7 +74,7 @@ module.exports = {
         'neon-blue-intense':
           '0 0 1.5px #ffffff, 0 0 2px #61dcfc, 0 0 1em #0055ffcc, 0 0 2em #0055ffcc, 0 0 3em #0022ff88',
         'neon-orange': '0 0 1px #ffffff, 0 0 3px #ff888888, 0 0 6px #ffff44cf',
-        'neon-orange-intense': '0px 0px 2px #ffff00, 0 0 0.25em #8a5d1c, 0 0 0.5em #8a5d1c',
+        'neon-orange-bright': '0 0 3px #ffffff, 0 0 5px #ff888888, 0 0 10px #ffff44cf',
       },
     },
     colors: ({ colors }) => ({

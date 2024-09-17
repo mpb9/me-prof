@@ -56,6 +56,32 @@
   }
 
   :root {
+    /* MARK: Border Imgs */
+    .brick-wall-border {
+      border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
+      border-style: solid;
+    }
+    .string-light-border {
+      border-image: url('/src/static/imgs/StringLight.png') 200 round;
+      border-style: solid;
+    }
+
+    /* MARK: Background Imgs */
+    .neon-green-light-bg {
+      background-image: url('/src/static/imgs/NeonGreenLight.png');
+      background-size: 1.5vh;
+      background-position-y: -0.1vh;
+    }
+    .marquee-pillar-bg {
+      background-image: url('/src/static/imgs/MarqueePillar.png');
+      background-size: 100%;
+    }
+    .top-piece-bg {
+      background-image: -moz-radial-gradient(center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+      background-image: -webkit-radial-gradient(center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+      background-image: radial-gradient(ellipse at center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+    }
+
     /* MARK: Fonts */
     --font-marquee-neon: 'MarqueeNeon', sans-serif;
     --font-marquee-title: 'MarqueeTitle', serif;
@@ -100,43 +126,68 @@
     .my-font-neon-glow {
       font-family: var(--font-neon-glow);
     }
+  }
 
-    /* MARK: Border Images */
-    .brick-wall-border {
-      border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
+  /* MARK: Animations */
+  @keyframes flicker {
+    0% {
+      opacity: 1;
     }
-    .marquee-light-blue-x,
-    .marquee-light-blue-y,
-    .marquee-light-yellow-x,
-    .marquee-light-yellow-y,
-    .marquee-light-orange-x,
-    .marquee-light-orange-y,
-    .brick-wall-border {
-      border-style: solid;
+    20% {
+      opacity: 0.75;
     }
-
-    .string-light-border {
-      border-image: url('/src/static/imgs/StringLight.png') 200 round;
-      border-style: solid;
+    40% {
+      opacity: 0.95;
     }
-
-    /* MARK: Background Images */
-    .neon-green-light-bg {
-      background-image: url('/src/static/imgs/NeonGreenLight.png');
-      background-size: 1.5vh;
-      background-position-y: -0.1vh;
+    60% {
+      opacity: 0.85;
     }
-
-    .marquee-pillar-bg {
-      background-image: url('/src/static/imgs/MarqueePillar.png');
-      background-size: 100%;
+    80% {
+      opacity: 0.5;
     }
-
-    .top-piece-bg {
-      background: #fbbe24;
-      background: -moz-radial-gradient(center, #fbbe24 0%, #17140f 80%, #17140f 100%);
-      background: -webkit-radial-gradient(center, #fbbe24 0%, #17140f 80%, #17140f 100%);
-      background: radial-gradient(ellipse at center, #fbbe24 0%, #17140f 80%, #17140f 100%);
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-constant {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.85;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.9;
+    }
+    40% {
+      opacity: 0.95;
+    }
+    50% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.85;
+    }
+    70% {
+      opacity: 0.95;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.85;
+    }
+    87% {
+      opacity: 0.25;
+    }
+    90% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 1;
     }
   }
 
