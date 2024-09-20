@@ -1,10 +1,12 @@
 import React from 'react';
+import BoxOffice from './BoxOffice.js';
 import Sidewalk from './Sidewalk.js';
 import TheaterDoor from './TheaterDoor.js';
 
 export default function TheaterEntrance() {
   return (
     <>
+      {/* https://css-tricks.com/stripes-css/ improve grid below */}
       <div className='bg-base-100 bg-grid-2-s-1-[#A5B4FC44] brick-wall-border flex h-2/5 w-screen border-x-[2.75rem]'>
         <div
           className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-7 border-l-[32px] bg-gradient-to-tr pb-2'
@@ -23,20 +25,13 @@ export default function TheaterEntrance() {
 
         {/* Entrance */}
         <div className='inline-flex h-full w-[48%] items-end'>
-          <div className='bg-base-100 flex w-full flex-col' style={{ height: '90%' }}>
-            {/* windows */}
-            <div className='flex h-1/4 w-full bg-gradient-to-b from-[#fff3c522] to-[#fff3c5aa]'>
-              <div className='h-full w-2/5 bg-gradient-to-b from-[#fff3c522] to-[#fff3c5aa] blur-sm'></div>
-              <div className='bg-secondary border-base-200 flex h-full w-1/5 items-center border-8 border-b-0 p-2 text-center'>
-                Box Office
-              </div>
+          <div className='bg-grid-2-s-1-[#A5B4FC44] flex h-[90%] w-full flex-col'>
+            <div className='lined-bg h-[15%] w-full border-x-[0.25rem] border-b-[0.5rem] border-t-[0.1rem] border-[#2a190b]'></div>
 
-              <div className='h-full w-2/5 bg-gradient-to-b from-[#fff3c522] to-[#fff3c5aa] blur-sm'></div>
-            </div>
             {/* doors */}
-            <div className='flex h-3/4 w-full items-center justify-center'>
+            <div className='flex h-[85%] w-full items-center justify-center border-x-[0.5rem] border-t-[0rem] border-[#251C0E]'>
               <TheaterDoor />
-              <div className='border-base-200 border-6 h-full w-1/3'></div>
+              <BoxOffice />
               <TheaterDoor />
             </div>
           </div>
