@@ -3,28 +3,242 @@
 @tailwind utilities;
 
 @layer base {
+  /* MARK: font-faces */
   @font-face {
     font-family: 'Martian';
     src: url('/src/static/fonts/MartianMono/MartianMonoNerdFont-Regular.ttf');
   }
-  ,
   @font-face {
     font-family: '3270';
     src: url('/src/static/fonts/3270/3270NerdFont-Regular.ttf');
     font-weight: bold;
   }
-  ,
   @font-face {
     font-family: 'ProFont';
     src: url('/src/static/fonts/ProFont/ProFontIIxNerdFont-Regular.ttf');
     font-weight: bold;
   }
+  @font-face {
+    font-family: 'Blockletter';
+    src: url('/src/static/fonts/blockletter/Blockletter.otf');
+  }
+  @font-face {
+    font-family: 'Bebas';
+    src: url('/src/static/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Fascinate';
+    src: url('/src/static/fonts/Fascinate.ttf');
+  }
+  @font-face {
+    font-family: 'ElectroHolic';
+    src: url('/src/static/fonts/electro-holic-font/ElectroHolic.ttf');
+  }
+  @font-face {
+    font-family: 'NeonGlow';
+    src: url('/src/static/fonts/neon-glow-font/NeonGlowBold-YxJv.ttf');
+  }
+
+  @font-face {
+    font-family: 'MarqueeNeon';
+    src: url('/src/static/fonts/ankh-sanctuary-font/AnkhSanctuary-PVK0B.ttf');
+  }
+  @font-face {
+    font-family: 'MarqueeTitle';
+    src: url('/src/static/fonts/NeonSpark-ovg0q.otf');
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
   :root {
-    --font-family-sans: 'Martian', sans-serif;
-    --font-family-serif: '3270', serif;
-    --font-family-mono: 'ProFont', monospace;
+    /* MARK: Skew Adjust */
+    .skew-12-adjust {
+      aspect-ratio: calc(2 / tan(12deg)) / 1;
+    }
 
-    font-family: var(--font-family-sans);
+    /* MARK: Borders */
+    .brick-wall-border {
+      border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
+      border-style: solid;
+    }
+    .string-light-border {
+      border-image: url('/src/static/imgs/StringLight.png') 200 round;
+      border-style: solid;
+    }
+
+    /* MARK: Backgrounds */
+    .neon-green-light-bg {
+      background-image: url('/src/static/imgs/NeonGreenLight.png');
+      background-size: 1.5vh;
+      background-position-y: -0.1vh;
+    }
+    .marquee-pillar-bg {
+      background-image: url('/src/static/imgs/MarqueePillar.png');
+      background-size: 100%;
+    }
+    .top-piece-bg {
+      background-image: -moz-radial-gradient(center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+      background-image: -webkit-radial-gradient(center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+      background-image: radial-gradient(ellipse at center, #fbbe24 0%, #17140f 85%, #17140f 100%);
+    }
+    .lined-bg {
+      background: linear-gradient(90deg, #b1b197 calc(100% - 1px), #1c1812 0);
+      background-size: calc((100% - 6 * 1px) / 7 + 1px) 100%;
+    }
+    .lined-h-bg {
+      background: linear-gradient(to bottom, #d4d4d8, #d4d4d8 45%, #0f0e0e 45%, #0f0e0e 55%, #d4d4d8);
+      background-size: 100% 0.2rem;
+    }
+    .diag-45-bg {
+      background: linear-gradient(
+        to bottom right,
+        transparent calc(50% - 2.25px),
+        #bdb8a2 calc(50% - 2px),
+        #bdb8a2 calc(50% + 2px),
+        #cac8c0 calc(50% + 2.25px)
+      );
+      background-size: 100%;
+    }
+    .diag-315-bg {
+      background: linear-gradient(
+        to bottom left,
+        transparent calc(50% - 2.25px),
+        #e6e0a7 calc(50% - 2px),
+        #e6e0a7 calc(50% + 2px),
+        #e5e5da calc(50% + 2.25px)
+      );
+      background-size: 100%;
+    }
+    .triangle-br-bg {
+      background: linear-gradient(to bottom right, transparent calc(50%), #e5e7eb calc(50%));
+      background-size: 100%;
+    }
+    .triangle-bl-bg {
+      background: linear-gradient(to bottom left, transparent calc(50%), #e5e7eb calc(50%));
+      background-size: 100%;
+    }
+    .triangle-tr-bg {
+      background: linear-gradient(to top right, transparent calc(40%), #c9c3ac calc(40%), #c9c3ac calc(60%), #e5e5da calc(60%));
+      background-size: 100%;
+    }
+    .triangle-tl-bg {
+      background: linear-gradient(to top left, transparent calc(40%), #bdb8a2 calc(40%), #bdb8a2 calc(60%), #cac8c0 calc(60%));
+      background-size: 100%;
+    }
+
+    /* MARK: Fonts */
+    --font-marquee-neon: 'MarqueeNeon', sans-serif;
+    --font-marquee-title: 'MarqueeTitle', serif;
+    --font-martian: 'Martian', sans-serif;
+    --font-3270: '3270', serif;
+    --font-monspace: 'ProFont', monospace;
+    --font-block: 'Blockletter';
+    --font-bebas: 'Bebas', sans-serif;
+    --font-fascinate: 'Fascinate', sans-serif;
+    --font-electro-holic: 'ElectroHolic', sans-serif;
+    --font-neon-glow: 'NeonGlow', sans-serif;
+
+    font-family: var(--font-martian);
+    .my-font-marquee-neon {
+      font-family: var(--font-marquee-neon);
+    }
+    .my-font-marquee-title {
+      font-family: var(--font-marquee-title);
+    }
+    .my-font-martian {
+      font-family: var(--font-sans);
+    }
+    .my-font-3270 {
+      font-family: var(--font-3270);
+    }
+    .my-font-monospace {
+      font-family: var(--font-monospace);
+    }
+    .my-font-bebas {
+      font-family: var(--font-bebas);
+    }
+    .my-font-block {
+      font-family: var(--font-block);
+    }
+    .my-font-fascinate {
+      font-family: var(--font-fascinate);
+    }
+    .my-font-electro {
+      font-family: var(--font-electro-holic);
+    }
+    .my-font-neon-glow {
+      font-family: var(--font-neon-glow);
+    }
+  }
+
+  /* MARK: Animations */
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 0.75;
+    }
+    40% {
+      opacity: 0.95;
+    }
+    60% {
+      opacity: 0.85;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes flicker-constant {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.85;
+    }
+    20% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.9;
+    }
+    40% {
+      opacity: 0.95;
+    }
+    50% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.85;
+    }
+    70% {
+      opacity: 0.95;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.85;
+    }
+    87% {
+      opacity: 0.25;
+    }
+    90% {
+      opacity: 0.95;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }

@@ -5,10 +5,6 @@ export default function SvgIcon({ site, style }) {
   const link = Links.find((link) => link.site === site);
   const tw_class = 'h-full w-10' + style.svg_tw + style.hvr_svg;
 
-  // useEffect(() => {
-  //   tw_class =
-  // }, []);
-
   return (
     <a
       href={link.url}

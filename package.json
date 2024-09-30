@@ -3,14 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@nauverse/tailwind-dot-grid-backgrounds": "^1.2.9",
     "@phosphor-icons/react": "^2.1.7",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "axios": "^1.7.2",
     "eslint-config-wesbos": "^4.0.1",
-    "flowbite": "^2.4.1",
-    "flowbite-react": "^0.10.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
@@ -45,10 +44,12 @@
     "@svgr/webpack": "^8.1.0",
     "ajv": "^8.17.1",
     "autoprefixer": "^10.4.19",
+    "daisyui": "^4.12.10",
     "postcss": "^8.4.39",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "tailwindcss-border-image": "^1.1.2"
   },
   "overrides": {
     "@svgr/webpack": "$@svgr/webpack"
