@@ -30,17 +30,15 @@ export default function BoxOffice() {
         {/* middle */}
         <div
           className='z-10 flex w-1/2 translate-y-1 flex-col justify-center bg-gradient-to-b from-[#4a3939] to-[#e5deca]'
-          style={{ height: 'calc(100% + 1px)' }}
+          style={{ height: 'calc(100% + 11px)' }}
           id='ticket-exchange'>
           {/* top */}
-          <div
-            className='w-full border-x-[1px] border-[#e5e7eb] bg-yellow-500'
-            style={{ height: 'calc(5% - 0px)' }}></div>
+          <div className='w-full border-x-[1px] border-[#e5e7eb]' style={{ height: 'calc(7% - 0px)' }}></div>
           {/* middle */}
           <div className='h-[55%] w-full border-x-[1px] border-b-4 border-[#e5e7eb] border-b-[#36100c] pb-0'>
             <div className='flex h-full w-full flex-col items-center justify-end border-b-0 border-b-[#bebebe]'>
               <div className='lined-h-bg mb-[40%] h-4 w-4 rounded-full border-[2px] border-[#d4d4d8] bg-repeat'></div>
-              <div className='h-2 w-10 rounded-t-sm bg-zinc-700'></div>
+              <div className='h-2 w-10 rounded-t-sm bg-zinc-800'></div>
             </div>
           </div>
           {/* bottom */}

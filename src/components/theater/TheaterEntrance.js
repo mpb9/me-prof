@@ -26,8 +26,7 @@ export default function TheaterEntrance() {
         {/* Entrance */}
         <div className='inline-flex h-full w-[48%] items-end'>
           <div className='bg-grid-2-s-1-[#A5B4FC44] flex h-[90%] w-full flex-col'>
-            <div className='lined-bg h-[15%] w-full border-x-[0rem] border-b-[0.25rem] border-t-[0rem] border-slate-300'></div>
-
+            <div className='lined-bg h-[15%] w-full border-x-[0rem] border-b-[0.25rem] border-t-[0rem] border-slate-300' />
             <div className='flex h-[85%] w-full items-center justify-center border-x-[0rem] border-t-[0rem] border-[#251C0E]'>
               <TheaterDoor />
               <BoxOffice />
