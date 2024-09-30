@@ -1,5 +1,5 @@
 import React from 'react';
-import BoxOffice from './BoxOffice.js';
+import BoxOffice from './box-office/BoxOffice.js';
 import Sidewalk from './Sidewalk.js';
 import TheaterDoor from './TheaterDoor.js';
 
@@ -26,10 +26,9 @@ export default function TheaterEntrance() {
         {/* Entrance */}
         <div className='inline-flex h-full w-[48%] items-end'>
           <div className='bg-grid-2-s-1-[#A5B4FC44] flex h-[90%] w-full flex-col'>
-            <div className='lined-bg h-[15%] w-full border-x-[0.25rem] border-b-[0.5rem] border-t-[0.1rem] border-[#2a190b]'></div>
+            <div className='lined-bg h-[15%] w-full border-x-[0rem] border-b-[0.25rem] border-t-[0rem] border-slate-300'></div>
 
-            {/* doors */}
-            <div className='flex h-[85%] w-full items-center justify-center border-x-[0.5rem] border-t-[0rem] border-[#251C0E]'>
+            <div className='flex h-[85%] w-full items-center justify-center border-x-[0rem] border-t-[0rem] border-[#251C0E]'>
               <TheaterDoor />
               <BoxOffice />
               <TheaterDoor />

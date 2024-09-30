@@ -5,10 +5,11 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', 'node_modules/flowbite-react/lib/esm/**/*.js'],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '640px',
       md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
     },
     // MARK: Extend TailwindCSS
     extend: {
@@ -94,6 +95,12 @@ module.exports = {
           '0 0 1.5px #ffffff, 0 0 2px #61dcfc, 0 0 1em #0055ffcc, 0 0 2em #0055ffcc, 0 0 3em #0022ff88',
         'neon-orange': '0 0 1px #ffffff, 0 0 3px #ff888888, 0 0 6px #ffff44cf',
         'neon-orange-bright': '0 0 3px #ffffff, 0 0 5px #ff888888, 0 0 10px #ffff44cf',
+      },
+      fontSize: {
+        '4xs': ['0.5rem', { lineHeight: '0.75rem' }],
+        '3xs': ['0.625rem', { lineHeight: '0.875rem' }],
+        '2xs': ['0.7rem', { lineHeight: '1rem' }],
+        '4xl': ['2.5rem', { lineHeight: '2.75rem' }],
       },
     },
     colors: ({ colors }) => ({

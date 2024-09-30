@@ -43,7 +43,6 @@
     font-family: 'MarqueeNeon';
     src: url('/src/static/fonts/ankh-sanctuary-font/AnkhSanctuary-PVK0B.ttf');
   }
-
   @font-face {
     font-family: 'MarqueeTitle';
     src: url('/src/static/fonts/NeonSpark-ovg0q.otf');
@@ -56,6 +55,11 @@
   }
 
   :root {
+    /* MARK: Skew Adjust */
+    .skew-12-adjust {
+      aspect-ratio: calc(2 / tan(12deg)) / 1;
+    }
+
     /* MARK: Borders */
     .brick-wall-border {
       border-image: url('/src/static/imgs/BrickWallSolidYellow.png') 225 round;
@@ -81,7 +85,6 @@
       background-image: -webkit-radial-gradient(center, #fbbe24 0%, #17140f 85%, #17140f 100%);
       background-image: radial-gradient(ellipse at center, #fbbe24 0%, #17140f 85%, #17140f 100%);
     }
-
     .lined-bg {
       background: linear-gradient(90deg, #b1b197 calc(100% - 1px), #1c1812 0);
       background-size: calc((100% - 6 * 1px) / 7 + 1px) 100%;
@@ -94,9 +97,9 @@
       background: linear-gradient(
         to bottom right,
         transparent calc(50% - 2.25px),
-        #c9c3ac calc(50% - 2px),
-        #c9c3ac calc(50% + 2px),
-        #d7d5cc calc(50% + 2.25px)
+        #bdb8a2 calc(50% - 2px),
+        #bdb8a2 calc(50% + 2px),
+        #cac8c0 calc(50% + 2.25px)
       );
       background-size: 100%;
     }
@@ -123,7 +126,7 @@
       background-size: 100%;
     }
     .triangle-tl-bg {
-      background: linear-gradient(to top left, transparent calc(40%), #c9c3ac calc(40%), #c9c3ac calc(60%), #d7d5cc calc(60%));
+      background: linear-gradient(to top left, transparent calc(40%), #bdb8a2 calc(40%), #bdb8a2 calc(60%), #cac8c0 calc(60%));
       background-size: 100%;
     }
 
@@ -146,7 +149,6 @@
     .my-font-marquee-title {
       font-family: var(--font-marquee-title);
     }
-
     .my-font-martian {
       font-family: var(--font-sans);
     }
