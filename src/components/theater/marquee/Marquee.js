@@ -16,27 +16,34 @@ export default function Marquee() {
         {/* Spot Lights */}
         <div
           className='bg-dot-1-s-1-amber-400 hover:bg-dot-1-s-2-amber-300 w-1/8 border-6 fixed z-20 h-[14.5%] border-r-8 border-[#3A2A00] bg-[#3A2A00]'
-          style={{ top: '10%', left: '28.5%' }}></div>
+          style={{ top: '10%', left: '28.5%' }}
+        />
         <div
           className='bg-dot-1-s-1-amber-400 hover:bg-dot-1-s-2-amber-300 border-t-6 fixed z-20 h-[14.5%] w-[16%] border-8 border-[#3A2A00] bg-[#3A2A00]'
-          style={{ top: '8.5%', left: '42%' }}></div>
+          style={{ top: '8.5%', left: '42%' }}
+        />
         <div
           className='bg-dot-1-s-1-amber-400 w-1/8 border-6 hover:bg-dot-1-s-2-amber-300 fixed z-20 h-[14.5%] border-l-8 border-[#3A2A00] bg-[#3A2A00]'
-          style={{ top: '10%', left: '59%' }}></div>
+          style={{ top: '10%', left: '59%' }}
+        />
 
         {/* Pillars */}
         <div
           className='marquee-pillar-bg fixed z-[22] h-[34%] w-[2.5em] rounded-b-xl rounded-tl-3xl rounded-tr-xl'
-          style={{ top: '19%', left: '0%' }}></div>
+          style={{ top: '19%', left: '0%' }}
+        />
         <div
           className='marquee-pillar-bg fixed z-[22] h-[38%] w-[3.5em] rounded-b-xl rounded-tl-3xl rounded-tr-xl'
-          style={{ top: '14%', left: '23%' }}></div>
+          style={{ top: '14%', left: '23%' }}
+        />
         <div
           className='marquee-pillar-bg shadow-dim fixed z-[22] h-[38%] w-[3.5em] rounded-b-xl rounded-tl-xl rounded-tr-3xl'
-          style={{ top: '14%', right: '23%' }}></div>
+          style={{ top: '14%', right: '23%' }}
+        />
         <div
           className='marquee-pillar-bg shadow-dim fixed z-[22] h-[34%] w-[2.5em] rounded-b-xl rounded-tl-xl rounded-tr-3xl'
-          style={{ top: '19%', right: '0%' }}></div>
+          style={{ top: '19%', right: '0%' }}
+        />
       </div>
 
       <div className='bg-brick-wall relative z-10 flex h-2/5 w-screen columns-3 items-end space-x-0 border-t-8 border-[#eee3bd] border-opacity-40 bg-repeat px-4 text-center'>

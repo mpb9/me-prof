@@ -20,7 +20,8 @@ export default function TheaterEntrance() {
           {/* COOL STUFF */}
           <div
             className='bg-stuff-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
-            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}></div>
+            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
+          />
         </div>
 
         {/* Entrance */}
@@ -41,7 +42,8 @@ export default function TheaterEntrance() {
           {/* DEV STUFF */}
           <div
             className='bg-dev-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
-            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}></div>
+            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
+          />
           {/* DUMP+CHASE */}
           <div
             className='bg-dnc-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:animate-pulse'
