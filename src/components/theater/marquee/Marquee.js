@@ -47,7 +47,6 @@ export default function Marquee() {
       </div>
 
       <div className='bg-brick-wall relative z-10 flex h-2/5 w-screen columns-3 items-end space-x-0 border-t-8 border-[#eee3bd] border-opacity-40 bg-repeat px-4 text-center'>
-        {/* LEFT */}
         <div className='bg-base-300 shadow-neon-top h-2/3 w-1/4 origin-top-right -skew-y-2'>
           <MarqueeMain text={'ABOUT'} />
           <MarqueeDesc
@@ -56,7 +55,6 @@ export default function Marquee() {
           />
         </div>
 
-        {/* MIDDLE */}
         <div className='static z-10 h-2/3 w-1/2'>
           <div className='h-full w-full'>
             <MarqueeMain text={'NOW SHOWING...'} />
@@ -71,7 +69,6 @@ export default function Marquee() {
           </div>
         </div>
 
-        {/* RIGHT */}
         <div className='bg-clip-border-marquee-r shadow-neon-top h-2/3 w-1/4 origin-top-left skew-y-2'>
           <MarqueeMain text={'CONTACT'} />
           <MarqueeDesc text={['MICHAELBEEBE1031@GMAIL.COM', '847-274-3448']} action={['copy', 'copy']} />
