@@ -1,4 +1,3 @@
-import React from 'react';
 import Marquee from './marquee/Marquee.js';
 import TheaterEntrance from './TheaterEntrance.js';
 

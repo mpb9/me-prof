@@ -67,7 +67,7 @@ export default function NavBar(props) {
         </select>
         <button className='block md:hidden'>
           <svg className='h-8 w-8 fill-none' viewBox='0 0 24 24'>
-            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='3' d='M4 6h16M4 12h16m-7 6h7'></path>
+            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='3' d='M4 6h16M4 12h16m-7 6h7' />
           </svg>
         </button>
       </div>

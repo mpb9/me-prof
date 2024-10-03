@@ -6,7 +6,6 @@ import TheaterDoor from './TheaterDoor.js';
 export default function TheaterEntrance() {
   return (
     <>
-      {/* https://css-tricks.com/stripes-css/ improve grid below */}
       <div className='bg-base-100 bg-grid-2-s-1-[#A5B4FC44] brick-wall-border flex h-2/5 w-screen border-x-[2.75rem]'>
         <div
           className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-7 border-l-[32px] bg-gradient-to-tr pb-2'
@@ -15,12 +14,18 @@ export default function TheaterEntrance() {
           <div
             className='bg-graphics-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:animate-pulse'
             style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
-            <a href='https://graphics-playground.com/' target='_blank' className='inline-block h-full w-full' />
+            <a
+              href='https://graphics-playground.com/'
+              target='_blank'
+              rel='noreferrer'
+              className='inline-block h-full w-full'
+            />
           </div>
           {/* COOL STUFF */}
           <div
             className='bg-stuff-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
-            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}></div>
+            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
+          />
         </div>
 
         {/* Entrance */}
@@ -41,12 +46,18 @@ export default function TheaterEntrance() {
           {/* DEV STUFF */}
           <div
             className='bg-dev-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
-            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}></div>
+            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
+          />
           {/* DUMP+CHASE */}
           <div
             className='bg-dnc-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:animate-pulse'
             style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
-            <a href='https://dump-n-chase.com/' target='_blank' className='inline-block h-full w-full' />
+            <a
+              href='https://dump-n-chase.com/'
+              target='_blank'
+              rel='noreferrer'
+              className='inline-block h-full w-full'
+            />
           </div>
         </div>
       </div>
