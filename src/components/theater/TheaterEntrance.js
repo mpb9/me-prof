@@ -12,7 +12,7 @@ export default function TheaterEntrance() {
           style={{ clipPath: 'polygon(18% 0, 100% 10%, 100% 100%, 0 100%, 0 0)' }}>
           {/* GRAPHIC PLAYGROUND */}
           <div
-            className='bg-graphics-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:animate-pulse'
+            className='bg-graphics-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:scale-105'
             style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://graphics-playground.com/'
@@ -23,7 +23,7 @@ export default function TheaterEntrance() {
           </div>
           {/* COOL STUFF */}
           <div
-            className='bg-stuff-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
+            className='bg-stuff-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:scale-105'
             style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
           />
         </div>
@@ -45,12 +45,12 @@ export default function TheaterEntrance() {
           style={{ clipPath: 'polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 82%)' }}>
           {/* DEV STUFF */}
           <div
-            className='bg-dev-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:animate-pulse'
+            className='bg-dev-poster-flipped-wide h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:scale-105'
             style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}
           />
           {/* DUMP+CHASE */}
           <div
-            className='bg-dnc-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:animate-pulse'
+            className='bg-dnc-poster-wide mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:scale-105'
             style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://dump-n-chase.com/'
