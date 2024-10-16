@@ -38,7 +38,6 @@
     font-family: 'NeonGlow';
     src: url('/src/static/fonts/neon-glow-font/NeonGlowBold-YxJv.ttf');
   }
-
   @font-face {
     font-family: 'MarqueeNeon';
     src: url('/src/static/fonts/ankh-sanctuary-font/AnkhSanctuary-PVK0B.ttf');
@@ -143,23 +142,31 @@
     --font-neon-glow: 'NeonGlow', sans-serif;
 
     font-family: var(--font-martian);
-    .my-font-marquee-neon {
-      font-family: var(--font-marquee-neon);
-    }
+
+    /* Marquee Title */
     .my-font-marquee-title {
       font-family: var(--font-marquee-title);
     }
+    /* Marquee Subtitle */
+    .my-font-neon-glow {
+      font-family: var(--font-neon-glow);
+    }
+    /* Box-office */
+    .my-font-bebas {
+      font-family: var(--font-bebas);
+    }
+
     .my-font-martian {
       font-family: var(--font-sans);
+    }
+    .my-font-marquee-neon {
+      font-family: var(--font-marquee-neon);
     }
     .my-font-3270 {
       font-family: var(--font-3270);
     }
     .my-font-monospace {
       font-family: var(--font-monospace);
-    }
-    .my-font-bebas {
-      font-family: var(--font-bebas);
     }
     .my-font-block {
       font-family: var(--font-block);
@@ -169,9 +176,6 @@
     }
     .my-font-electro {
       font-family: var(--font-electro-holic);
-    }
-    .my-font-neon-glow {
-      font-family: var(--font-neon-glow);
     }
   }
 

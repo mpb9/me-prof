@@ -24,7 +24,7 @@ export default function MarqueeDesc(props) {
                 onClick={handleCopy}>
                 {item}
               </button>
-              {copied === item ? <Toast type='success' text='copied' /> : null}
+              {copied === item ? <Toast type='success' text='copied!' /> : null}
             </div>
           );
         }
