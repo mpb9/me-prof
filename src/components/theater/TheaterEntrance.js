@@ -18,6 +18,7 @@ export default function TheaterEntrance() {
               target='_blank'
               rel='noreferrer'
               className='inline-block h-full w-full'
+              aria-label='Graphic Playground'
             />
           </div>
           {/* COOL STUFF */}
@@ -56,6 +57,7 @@ export default function TheaterEntrance() {
               target='_blank'
               rel='noreferrer'
               className='inline-block h-full w-full'
+              aria-label='Dump+Chase'
             />
           </div>
         </div>
