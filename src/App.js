@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-// import Footer from './components/Footer';
+import { useState } from 'react';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Theater from './components/theater/Theater';
 import { Dark } from './data/Themes';
-// import { BW, Dark, Light, MyFav } from './data/Themes';
 
 export default function App() {
   const [theme, setTheme] = useState(Dark);
