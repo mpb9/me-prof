@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import BoxOfficeTop from './BoxOfficeTop';
 
 export default function BoxOffice() {
@@ -7,7 +7,7 @@ export default function BoxOffice() {
   const skew12Adjust = 2 / Math.tan(12 * (Math.PI / 180));
 
   return (
-    <div className='h-full w-1/3 bg-gradient-to-b from-slate-300 from-[3rem] to-[#36220c] to-[3rem]' on>
+    <div className='h-full w-1/3 bg-gradient-to-b from-slate-300 from-[3rem] to-[#36220c] to-[3rem]'>
       <BoxOfficeTop />
 
       <div

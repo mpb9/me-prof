@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function MarqueeMain(props) {
   return (
     <div className='neon-green-light-bg text-accent-content shadow-dim-in flex h-2/5 w-full items-center justify-center border-t-2 border-[#f2f28b]'>

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BW, Dark, Light, MyFav } from '../data/Themes';
 import burger_png from '../static/imgs/BurgerBoy.png';
-import SvgIcon from './babies/SvgIcon';
+import SvgIcon from './utils/SvgIcon';
 
 NavBar.propTypes = {
   changeTheme: PropTypes.func.isRequired,

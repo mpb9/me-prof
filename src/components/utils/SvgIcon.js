@@ -1,4 +1,3 @@
-import React from 'react';
 import { Links } from '../../data/MyInfo';
 
 export default function SvgIcon({ site, style }) {

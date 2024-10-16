@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Sidewalk() {
   return (
     <div className='h-1/10 bg-gradient-to-b from-[#7d714c] to-[#8b8369]'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function TheaterDoor() {
   return (
     <div className='flex h-full w-1/3 border-t-[0.75rem] border-t-slate-300'>
