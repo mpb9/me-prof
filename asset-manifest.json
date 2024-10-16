@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.feec214d.css",
-    "main.js": "/static/js/main.46c07efb.js",
+    "main.css": "/static/css/main.7e1c5613.css",
+    "main.js": "/static/js/main.10db7132.js",
     "static/media/BurgerBoy.png": "/static/media/BurgerBoy.7f37977c6ea5867ecfd7.png",
     "static/media/3270NerdFont-Regular.ttf": "/static/media/3270NerdFont-Regular.1b9f19090adc62418233.ttf",
     "static/media/ProFontIIxNerdFont-Regular.ttf": "/static/media/ProFontIIxNerdFont-Regular.e9ca5e065baf1a52821e.ttf",
@@ -24,11 +24,11 @@
     "static/media/Blockletter.otf": "/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/NeonGreenLight.png": "/static/media/NeonGreenLight.7e7f8a68aac4da6f7a10.png",
     "index.html": "/index.html",
-    "main.feec214d.css.map": "/static/css/main.feec214d.css.map",
-    "main.46c07efb.js.map": "/static/js/main.46c07efb.js.map"
+    "main.7e1c5613.css.map": "/static/css/main.7e1c5613.css.map",
+    "main.10db7132.js.map": "/static/js/main.10db7132.js.map"
   },
   "entrypoints": [
-    "static/css/main.feec214d.css",
-    "static/js/main.46c07efb.js"
+    "static/css/main.7e1c5613.css",
+    "static/js/main.10db7132.js"
   ]
 }
