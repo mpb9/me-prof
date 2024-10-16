@@ -18,6 +18,9 @@ module.exports = {
         6: '6px',
         '3-rem': '3rem',
       },
+      lineHeight: {
+        4.5: '1.125rem',
+      },
       height: {
         '1/8': '12.5%',
         '1/10': '10%',

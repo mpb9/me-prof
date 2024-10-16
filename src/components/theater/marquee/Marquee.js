@@ -1,4 +1,3 @@
-import React from 'react';
 import Michael_Beebe_Resume from '../../../static/docs/Michael_Beebe_Resume.pdf';
 import MarqueeDesc from './MarqueeDesc';
 import MarqueeMain from './MarqueeMain';
@@ -57,7 +56,7 @@ export default function Marquee() {
 
         <div className='static z-10 h-2/3 w-1/2'>
           <div className='h-full w-full'>
-            <MarqueeMain text={'NOW SHOWING...'} />
+            <MarqueeMain text={'NOW SHOWING'} />
             <MarqueeDesc
               text={[
                 'FULL-STACK SOFTWARE ENGINEER',
