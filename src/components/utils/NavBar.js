@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
-import { BW, Dark, Dev, Light, MyFav, NewTab, Stuff } from '../../data/Themes';
 import burger_png from '../../static/imgs/iconography/burgerboy.png';
 import SvgIcon from './SvgIcon';
+import ThemePicker from './ThemePicker';
 
 NavBar.propTypes = {
   changeTheme: PropTypes.func.isRequired,
@@ -12,79 +11,20 @@ NavBar.propTypes = {
 const tooltip_sites = ['LinkedIn', 'GitHub', 'Letterboxd'];
 
 export default function NavBar(props) {
-  const [activeTheme, setActiveTheme] = useState(props.theme);
-
-  const changeThemeNav = (event) => {
-    if (event) {
-      let new_theme = null;
-      switch (event.target.value) {
-        case 'dark':
-          new_theme = Dark;
-          break;
-        case 'light':
-          new_theme = Light;
-          break;
-        case 'b+w':
-          new_theme = BW;
-          break;
-        case 'mike':
-          new_theme = MyFav;
-          break;
-        case 'stuff':
-          new_theme = Stuff;
-          break;
-        case 'dev':
-          new_theme = Dev;
-          break;
-        case 'new-tab':
-          new_theme = NewTab;
-          break;
-        default:
-          return;
-      }
-      setActiveTheme(new_theme);
-      props.changeTheme(new_theme);
-    }
-  };
-
   return (
     <nav
       className={
         'fixed left-0 top-0 flex w-screen items-center justify-between px-3 py-3 sm:px-4 md:px-8 lg:px-12 xl:px-16' +
-        activeTheme.nav.main_tw
+        props.theme.nav.main_tw
       }>
       <div className='flex items-center space-x-4'>
         <img src={burger_png} alt='logo' className='mr-4 h-10 w-10' />
       </div>
       <div className='flex items-center'>
         {tooltip_sites.map((site) => (
-          <SvgIcon key={site} site={site} style={activeTheme.nav} />
+          <SvgIcon key={site} site={site} style={props.theme.nav} />
         ))}
-
-        {/* THEME PICKER */}
-        {/*
-        <select
-          onChange={changeThemeNav}
-          className={
-            'ml-4 hidden cursor-pointer rounded-sm border-2 pb-1 pt-1 text-sm focus:border-current focus:ring-0 md:block' +
-            activeTheme.nav.btn_tw
-          }
-          name='theme'
-          defaultValue={props.themeName}>
-          <option>dark</option>
-          <option>light</option>
-          <option>b+w</option>
-          <option>mike</option>
-          <option>stuff</option>
-          <option>dev</option>
-          <option>new-tab</option>
-        </select>
-
-         <button className='block md:hidden'>
-          <svg className='h-8 w-8 fill-none' viewBox='0 0 24 24'>
-            <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='3' d='M4 6h16M4 12h16m-7 6h7' />
-          </svg>
-        </button> */}
+        <ThemePicker changeTheme={props.changeTheme} theme={props.theme} themeName={props.themeName} />
       </div>
     </nav>
   );
