@@ -4,8 +4,8 @@ import CoolStuff from './components/cool_stuff/CoolStuff';
 import NewTab from './components/cool_stuff/new_tab/NewTab';
 import DevWork from './components/dev_work/DevWork';
 import Home from './components/Home';
-import NavBar from './components/NavBar';
 import Theater from './components/theater/Theater';
+import NavBar from './components/utils/NavBar';
 import { Dark } from './data/Themes';
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
   }
   return (
     <div className={'min-h-screen ' + theme.main.main_tw}>
-      <NavBar changeTheme={changeTheme} theme={theme} />
+      <NavBar changeTheme={changeTheme} theme={theme} themeName='dark' />
       <Home className='h-screen' theme={theme} />
     </div>
   );
