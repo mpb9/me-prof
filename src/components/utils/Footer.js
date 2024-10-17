@@ -1,4 +1,4 @@
-import { MyInfo } from '../data/MyInfo';
+import { MyInfo } from '../../data/MyInfo';
 
 export default function Footer() {
   return (
