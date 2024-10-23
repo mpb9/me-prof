@@ -2,11 +2,12 @@
 
 ## :link: **Links:**
 
-[GitHub](https://github.com/mpb9)
-[LinkedIn](https://www.linkedin.com/in/michaelbeebe9/)
-
+[This Site](https://michael-beebe.com/)
 [Graphics Playground](https://graphics-playground.com/)
 [DUMP+CHASE](https://dump-n-chase.com/)
+
+[GitHub](https://github.com/mpb9)
+[LinkedIn](https://www.linkedin.com/in/michaelbeebe9/)
 
 ## :rocket: **Deployment:**
 
