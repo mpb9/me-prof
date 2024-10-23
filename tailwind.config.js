@@ -57,6 +57,7 @@ module.exports = {
         'stuff-poster': "url('/src/static/imgs/posters/StuffPoster.png')",
         'dnc-poster': "url('/src/static/imgs/posters/DnCPoster.png')",
         'box-office-border': "url('/src/static/imgs/BoxOfficeBorder.png')",
+        cloud: "url('/src/static/imgs/Cloud.jpg')",
       },
       boxShadow: {
         'neon-yellow-in': '0 0 15px 0px yellow inset',
@@ -73,6 +74,10 @@ module.exports = {
           'rgba(254, 242, 197, 0.5) -5px 0px, rgba(254, 242, 197, 0.4) -10px 0px, rgba(254, 242, 197, 0.3) -15px 0px',
         'bright-right':
           'rgba(254, 242, 197, 0.5) 5px 0px, rgba(254, 242, 197, 0.4) 10px 0px, rgba(254, 242, 197, 0.3) 15px 0px',
+      },
+      listStyleType: {
+        square: 'square',
+        circle: 'circle',
       },
       clipPath: {
         'marquee-l': 'polygon(0 4%, 100% 0, 100% 98%, 0 100%)',
@@ -138,7 +143,7 @@ module.exports = {
           btn: '#a1a1aa', // zinc-400
           svg: '#92400e', // amber-800
         },
-        footer: {
+        sidebar: {
           txt: '#44403c', // stone-700
           bg: 'red-200',
           brdr: 'red-200',

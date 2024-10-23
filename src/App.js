@@ -1,7 +1,7 @@
 import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CoolStuff from './components/cool_stuff/CoolStuff';
-import NewTab from './components/cool_stuff/new_tab/NewTab';
 import DevWork from './components/dev_work/DevWork';
+import NewTab from './components/new_tab/NewTab';
 import Theater from './components/theater/Theater';
 
 export default function App() {
