@@ -29,3 +29,4 @@ tailwind-colors.png
 .vscode/*
 
 src/static/fonts/*
+src/static/imgs/inactive/*

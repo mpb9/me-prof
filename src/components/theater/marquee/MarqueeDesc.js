@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Toast from '../../utils/Toast';
+import Toast from '../../common/Toast';
 export default function MarqueeDesc(props) {
   let [copied, setCopied] = useState('');
 
