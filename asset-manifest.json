@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c217da46.css",
-    "main.js": "/static/js/main.a810a3ed.js",
+    "main.css": "/static/css/main.311e6e92.css",
+    "main.js": "/static/js/main.982854c8.js",
     "static/media/burgerboy.png": "/static/media/burgerboy.7f37977c6ea5867ecfd7.png",
     "static/media/3270NerdFont-Regular.ttf": "/static/media/3270NerdFont-Regular.1b9f19090adc62418233.ttf",
     "static/media/ProFontIIxNerdFont-Regular.ttf": "/static/media/ProFontIIxNerdFont-Regular.e9ca5e065baf1a52821e.ttf",
     "static/media/MartianMonoNerdFont-Regular.ttf": "/static/media/MartianMonoNerdFont-Regular.5875ae91affac8581b67.ttf",
     "static/media/StuffPoster.png": "/static/media/StuffPoster.33629f26bc7ca2deb67b.png",
     "static/media/GraphicsPoster.png": "/static/media/GraphicsPoster.3985e9294d68885090d9.png",
-    "static/media/DnCPoster.png": "/static/media/DnCPoster.f1e7b930f8137d729302.png",
     "static/media/BrickWallSolidYellow.png": "/static/media/BrickWallSolidYellow.47ad609e8113020ba305.png",
     "static/media/MarqueePillar.png": "/static/media/MarqueePillar.edb3819862f032d5c2f6.png",
     "static/media/Cloud.jpg": "/static/media/Cloud.c0c8295a184aa4e05da9.jpg",
     "static/media/ElectroHolic.ttf": "/static/media/ElectroHolic.c562b21271f59ff26958.ttf",
     "static/media/DevPoster.png": "/static/media/DevPoster.dd49c494e0d3054b6dbe.png",
     "static/media/Michael_Beebe_Resume.pdf": "/static/media/Michael_Beebe_Resume.104e31859c779e902e56.pdf",
+    "static/media/DnCPoster.png": "/static/media/DnCPoster.33e0dfb8d6672933fb23.png",
     "static/media/AnkhSanctuary-PVK0B.ttf": "/static/media/AnkhSanctuary-PVK0B.14b8d3aaa658b8f9ff7a.ttf",
     "static/media/BrickWall.png": "/static/media/BrickWall.d50ed081e69a70a9a1e6.png",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
@@ -25,11 +25,11 @@
     "static/media/Blockletter.otf": "/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/NeonGreenLight.png": "/static/media/NeonGreenLight.7e7f8a68aac4da6f7a10.png",
     "index.html": "/index.html",
-    "main.c217da46.css.map": "/static/css/main.c217da46.css.map",
-    "main.a810a3ed.js.map": "/static/js/main.a810a3ed.js.map"
+    "main.311e6e92.css.map": "/static/css/main.311e6e92.css.map",
+    "main.982854c8.js.map": "/static/js/main.982854c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c217da46.css",
-    "static/js/main.a810a3ed.js"
+    "static/css/main.311e6e92.css",
+    "static/js/main.982854c8.js"
   ]
 }
