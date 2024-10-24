@@ -15,14 +15,9 @@ export default function CoolStuff() {
       <NavBar theme={theme} themeName='stuff' />
       <SideBar cats={cats} theme={theme} />
       <div
-        className={`min-h-screen m-0 pt-12 pl-[10vw] pb-10 pr-5 sm:sm-14 md:pt-16 lg:pt-20 overflow-scroll space-y-3 ${theme.main.txt}`}>
+        className={`min-h-screen m-0 pt-14 pl-14 sm:pl-[12vw] lg:pl-[10vw] pb-10 pr-0 md:pr-2 lg:pr-5 sm:sm-14 md:pt-16 lg:pt-20 overflow-scroll space-y-3 ${theme.main.txt}`}>
         {cats.map((category) => (
-          <div
-            key={category.name}
-            id={category.name.toLowerCase()}
-            className={`flex px-6 py-2 border-2 mx-8 bg-[#000] bg-opacity-70 ${category.color.brdr}`}>
-            <List category={category} content={getStuffByCategory(coolStuff, category)} />
-          </div>
+          <List key={category.name} category={category} content={getStuffByCategory(coolStuff, category)} />
         ))}
       </div>
     </div>

@@ -37,7 +37,7 @@ export const STUFF_LIST = [
     'https://graphics-playground.com/',
     '2d graphics project',
     'dev',
-    Icon.PencilSimpleLine,
+    Icon.Shapes,
     true,
     true
   ),
@@ -46,7 +46,7 @@ export const STUFF_LIST = [
     'https://github.com/stars/mpb9/lists/graphics',
     'list of 2d graphics project repos',
     'dev',
-    Icon.PencilSimpleLine,
+    Icon.Shapes,
     true,
     true
   ),
@@ -90,6 +90,22 @@ export const STUFF_LIST = [
     false
   ),
   Stuff.infoInstance(
+    'The Odin Project',
+    'https://www.theodinproject.com/',
+    'free full stack curriculum',
+    'dev',
+    Icon.FileCode,
+    true
+  ),
+  Stuff.infoInstance(
+    'Learn X in Y minutes',
+    'https://learnxinyminutes.com/',
+    'quick reference for programming languages',
+    'dev',
+    Icon.FileCode,
+    true
+  ),
+  Stuff.infoInstance(
     'React Dossier',
     'https://docs.google.com/document/d/1es5I6-GlpkCMbwxNu6TmUst20lvxuTTDp_LKbbeD-HU/edit?usp=drive_link',
     '',
@@ -126,6 +142,22 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.infoInstance(
+    'CSS Tricks',
+    'https://css-tricks.com/',
+    'info on advanced or unique css techniques',
+    'dev',
+    Icon.FileCss,
+    true
+  ),
+  Stuff.infoInstance(
+    'HTML <head> Explained',
+    'https://htmlhead.dev/',
+    'comprehensive guide to the <head> element',
+    'dev',
+    Icon.FileHtml,
+    true
+  ),
+  Stuff.infoInstance(
     'Markdown Syntax',
     'https://www.markdownguide.org/extended-syntax/',
     'comprehensive guide',
@@ -133,21 +165,36 @@ export const STUFF_LIST = [
     Icon.MarkdownLogo,
     true
   ),
-
-  // MARK: Tools
-  Stuff.toolsInstance(
-    'RayCast',
-    'https://www.raycast.com/',
-    'extremely useful productivity app for macOS that helps you find files, access applications, etc',
-    'cool',
-    Icon.Network
-  ),
-  Stuff.toolsInstance(
-    'Phosphor Icons',
-    'https://phosphoricons.com',
-    'icon library i use',
+  Stuff.infoInstance(
+    "Tania Rascia's Personal Site",
+    'https://www.taniarascia.com/',
+    'great resource for web development tutorials and ideas',
     'dev',
-    Icon.PhosphorLogo,
+    Icon.FloppyDisk,
+    true
+  ),
+  Stuff.infoInstance(
+    'Full Stack Python',
+    'https://www.fullstackpython.com/',
+    'learn to build, deploy, and scale web applications with Python',
+    'dev',
+    Icon.FilePy,
+    true
+  ),
+  Stuff.infoInstance(
+    'Automate the Boring Stuff with Python',
+    'https://automatetheboringstuff.com/',
+    'python guide and project ideas (mostly for beginners)',
+    'dev',
+    Icon.FilePy,
+    true
+  ),
+  Stuff.infoInstance(
+    'Git Commands Cheat Sheet',
+    'https://www.gitkraken.com/learn/git/commands',
+    'quick reference for git commands',
+    'dev',
+    Icon.GitBranch,
     true
   ),
 
@@ -155,7 +202,7 @@ export const STUFF_LIST = [
   Stuff.moviesInstance(
     'Letterboxd',
     'https://letterboxd.com/michaelbeebe/',
-    '',
+    'my movie diary, reviews, lists, etc',
     'cool',
     CATEGORIES.movies.icon,
     true,
@@ -166,7 +213,7 @@ export const STUFF_LIST = [
     'https://letterboxd.com/michaelbeebe/list/list-list/detail',
     'directory for my letterboxd movie lists',
     'cool',
-    CATEGORIES.movies.icon,
+    Icon.ListBullets,
     true,
     true
   ),
@@ -184,7 +231,7 @@ export const STUFF_LIST = [
     'https://letterboxd.com/michaelbeebe/list/directors-ranked/detail/',
     'list of my favorite directors *very much a work in progress*',
     'cool',
-    CATEGORIES.movies.icon,
+    Icon.MegaphoneSimple,
     false,
     true
   ),
@@ -215,24 +262,123 @@ export const STUFF_LIST = [
     false,
     false
   ),
-  Stuff.moviesInstance(
-    'Cine2Nerdle',
-    'https://www.cinenerdle2.app/',
-    'puzzle game(s) for movie lovers',
+
+  // MARK: Writings
+
+  // MARK: Music
+  Stuff.musicInstance(
+    'Spotify',
+    'https://open.spotify.com/user/8hor3sw0w4vz3cl2yopkegyum?si=4e313d075fd84cb5',
+    '',
     'cool',
-    Icon.PuzzlePiece,
-    true,
-    false
+    Icon.Headphones,
+    false,
+    true
   ),
+  Stuff.musicInstance(
+    'Fall Rock Playlist',
+    'https://open.spotify.com/playlist/4K8QQrhsItDwUO2akai7mD?si=2h1pOhrCSI6uNQc-YAbS4A',
+    '',
+    'cool',
+    Icon.Ghost,
+    false,
+    true
+  ),
+
   // MARK: Maps
   Stuff.mapsInstance('Google Maps', 'https://maps.google.com', '', '', Icon.MapTrifold, true, false),
   Stuff.mapsInstance(
-    'NYC Map',
+    'NYC',
     'https://www.google.com/maps/d/viewer?mid=1-wa0oQbqWeMILNOMbXYEsHrFHouwpQg&ll=40.73701000765635%2C-73.991733817946&z=13',
     'created to track my favorite food spots and places to check out in NYC',
     'cool',
-    Icon.MapTrifold,
+    Icon.City,
     true,
+    true
+  ),
+  Stuff.mapsInstance(
+    'ATL',
+    'https://www.google.com/maps/d/viewer?hl=en&mid=1Etg-8q_m3HEcGYJuNnJB9EthINfd9cc&ll=33.918656446571994%2C-84.4114177&z=11',
+    'things to do in Atlanta',
+    'cool',
+    Icon.CarProfile,
+    false,
+    true
+  ),
+  Stuff.mapsInstance(
+    'Amsterdam',
+    'https://www.google.com/maps/d/viewer?hl=en&mid=1zcNxbvUm5k3t9ESpUXBMPk1SoLtH6LM&ll=52.37102021418721%2C4.899101649999977&z=14',
+    'where i wanted to / did visit in Amsterdam',
+    'cool',
+    Icon.Windmill,
+    false,
+    true
+  ),
+  Stuff.mapsInstance(
+    'Ashville',
+    'https://www.google.com/maps/d/viewer?hl=en&mid=1rD-47naM8GewRetH5wrZvWBhyjZ1dFc&ll=35.587787441791896%2C-82.56694757663533&z=14',
+    '(mostly breweries)',
+    'cool',
+    Icon.Mountains,
+    false,
+    true
+  ),
+
+  // MARK: Tools
+  Stuff.toolsInstance(
+    'RayCast',
+    'https://www.raycast.com/',
+    'extremely useful productivity app for macOS that helps you find files, access applications, etc',
+    'cool',
+    Icon.Network
+  ),
+  Stuff.toolsInstance(
+    'Phosphor Icons',
+    'https://phosphoricons.com',
+    'icon library i use',
+    'dev',
+    Icon.PhosphorLogo,
+    true
+  ),
+  Stuff.toolsInstance(
+    'New Tab Redirect',
+    'https://chromewebstore.google.com/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna',
+    'chrome extension i use to set my new tab page to a custom page',
+    'cool',
+    Icon.GoogleChromeLogo,
+    false
+  ),
+  Stuff.toolsInstance('Clippy', 'https://bennettfeely.com/clippy/', 'css clip-path maker', 'dev', Icon.Polygon, true),
+  Stuff.toolsInstance(
+    'CSS-matic',
+    'https://cssmatic.com/',
+    'css generators for gradients, box shadows, border radius, and noise texture',
+    'dev',
+    Icon.FileCss,
+    true
+  ),
+  Stuff.toolsInstance(
+    'Nerd Fonts',
+    'https://www.nerdfonts.com/',
+    'patches developer targeted fonts with a high number of glyphs (icons)',
+    'dev',
+    Icon.TextAa,
+    true
+  ),
+  Stuff.toolsInstance(
+    'Color Designer - Gradient Generator',
+    'https://colordesigner.io/gradient-generator',
+    'gradient generator that lets you customize number of steps between colors',
+    'dev',
+    Icon.Gradient,
+    true
+  ),
+  Stuff.toolsInstance(
+    'free-for.dev',
+    'https://github.com/ripienaar/free-for-dev?tab=readme-ov-file#table-of-contents',
+    'list of free services for developers',
+    'dev',
+    Icon.ListBullets,
     true
   ),
 
@@ -263,7 +409,7 @@ export const STUFF_LIST = [
     'cool',
     Icon.FootballHelmet,
     true,
-    true
+    false
   ),
   Stuff.sportsInstance(
     'Ringer Fantasy Football Rankings',
@@ -281,8 +427,8 @@ export const STUFF_LIST = [
   // MARK: Shop
   Stuff.shopInstance('Amazon', 'https://www.amazon.com', '', '', Icon.AmazonLogo, true, false),
 
-  // MARK: Game
-  Stuff.gameInstance(
+  // MARK: Games
+  Stuff.gamesInstance(
     'Connections',
     'https://www.nytimes.com/games/connections',
     '',
@@ -291,17 +437,19 @@ export const STUFF_LIST = [
     true,
     false
   ),
+  Stuff.gamesInstance(
+    'Cine2Nerdle',
+    'https://www.cinenerdle2.app/',
+    'puzzle game(s) for movie lovers',
+    'cool',
+    Icon.PuzzlePiece,
+    true,
+    false
+  ),
 
   // MARK: Social
-  Stuff.socialInstance('Twitter', 'https://twitter.com/mbeeebe'),
-  Stuff.socialInstance('Instagram', 'https://www.instagram.com/michael.beebe/', '', '', Icon.Camera),
-  Stuff.socialInstance(
-    'Spotify',
-    'https://open.spotify.com/user/8hor3sw0w4vz3cl2yopkegyum?si=4e313d075fd84cb5',
-    '',
-    '',
-    Icon.Headphones
-  ),
+  Stuff.socialInstance('Twitter', 'https://twitter.com/mbeeebe', '', 'cool', Icon.TwitterLogo),
+  Stuff.socialInstance('Instagram', 'https://www.instagram.com/michael.beebe/', '', 'cool', Icon.Camera),
   Stuff.socialInstance('Reddit', 'https://www.reddit.com', '', '', Icon.RedditLogo),
   // MARK: Misc
 ];

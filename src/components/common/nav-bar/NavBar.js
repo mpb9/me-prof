@@ -12,7 +12,7 @@ const tooltip_sites = ['Dump N Chase', 'Graphics Playground', 'Letterboxd', 'Spo
 export default function NavBar(props) {
   return (
     <nav
-      className={`fixed left-0 top-0 flex w-screen items-center justify-between px-3 pt-2 pb-2 sm:px-4 lg:px-6 xl:pr-8 border-y-[2px] bg-opacity-60 ${props.theme.nav.brdr} ${props.theme.nav.txt} ${props.theme.nav.bg}`}>
+      className={`fixed z-20 left-0 top-0 flex w-screen items-center justify-between px-3 pt-2 pb-2 sm:px-4 lg:px-6 xl:pr-8 border-y-[2px] bg-opacity-95 ${props.theme.nav.brdr} ${props.theme.nav.txt} ${props.theme.nav.bg}`}>
       <div className='flex items-center'>
         {(() => {
           switch (props.themeName) {

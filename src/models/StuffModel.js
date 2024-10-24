@@ -79,6 +79,30 @@ export class Stuff {
     return new Stuff(name, url, info, page, icon, CATEGORIES.movies, bookmark, mine);
   }
 
+  static writingsInstance(
+    name,
+    url = '',
+    info = '',
+    page = '',
+    icon = CATEGORIES.writings.icon,
+    bookmark = false,
+    mine = false
+  ) {
+    return new Stuff(name, url, info, page, icon, CATEGORIES.writings, bookmark, mine);
+  }
+
+  static musicInstance(
+    name,
+    url = '',
+    info = '',
+    page = '',
+    icon = CATEGORIES.music.icon,
+    bookmark = false,
+    mine = false
+  ) {
+    return new Stuff(name, url, info, page, icon, CATEGORIES.music, bookmark, mine);
+  }
+
   static mapsInstance(
     name,
     url = '',
@@ -115,16 +139,16 @@ export class Stuff {
     return new Stuff(name, url, info, page, icon, CATEGORIES.shop, bookmark, mine);
   }
 
-  static gameInstance(
+  static gamesInstance(
     name,
     url = '',
     info = '',
     page = '',
-    icon = CATEGORIES.game.icon,
+    icon = CATEGORIES.games.icon,
     bookmark = false,
     mine = false
   ) {
-    return new Stuff(name, url, info, page, icon, CATEGORIES.game, bookmark, mine);
+    return new Stuff(name, url, info, page, icon, CATEGORIES.games, bookmark, mine);
   }
 
   static socialInstance(name, url = '', info = '', page = '', icon = CATEGORIES.social.icon) {

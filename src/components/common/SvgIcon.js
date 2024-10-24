@@ -8,7 +8,7 @@ export default function SvgIcon({ site, style }) {
       target='_blank'
       rel='noreferrer'
       className='inline-flex h-full cursor-pointer rounded-lg p-0 md:block'>
-      <curr_site.icon weight='duotone' className={`h-full w-6 md:w-7 lg:w-8 ${style.svg} hover:scale-110`} />
+      <curr_site.icon weight='fill' className={`h-full w-6 md:w-7 lg:w-8 ${style.svg} hover:scale-110`} />
     </a>
   );
 }

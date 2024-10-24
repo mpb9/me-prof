@@ -49,7 +49,6 @@ export default function TheaterEntrance() {
           <div
             className='bg-dev-poster h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:scale-110'
             style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
-            {' '}
             <NavLink to='/dev' className='inline-block h-full w-full' aria-label='Dev Work' />
           </div>
           {/* DUMP+CHASE */}
