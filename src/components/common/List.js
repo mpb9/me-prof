@@ -9,7 +9,7 @@ export default function List(props) {
   return (
     <div
       id={props.category.name.toLowerCase()}
-      className={`flex ml-9 mr-4 sm:mr-6 lg:ml-12 xl:mr-10 bg-[#000] bg-opacity-65 ${props.category.color.brdr}`}>
+      className={`flex ml-9 mr-4 sm:mr-6 md:mr-10 lg:ml-12 lg:mr-14 xl:mr-20 bg-[#000] bg-opacity-65 ${props.category.color.brdr}`}>
       <div
         className={`hidden sm:flex items-center text-[#000] text-opacity-75 bg-opacity-75 justify-center ${props.category.color.bg}`}>
         <span className='mx-[2px]'>
