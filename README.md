@@ -2,12 +2,17 @@
 
 ## :link: **Links:**
 
-[This Site](https://michael-beebe.com/)
-[Graphics Playground](https://graphics-playground.com/)
-[DUMP+CHASE](https://dump-n-chase.com/)
-
-[GitHub](https://github.com/mpb9)
-[LinkedIn](https://www.linkedin.com/in/michaelbeebe9/)
+- Personal Website
+  - [Homepage](https://michael-beebe.com/)
+  - [My Development Projects / Tools / Resources](https://michael-beebe.com/dev/)
+  - [Stuff I Think is Cool](https://michael-beebe.com/stuff/)
+  - [Custom New Tab Landing Page](https://michael-beebe.com/new-tab/)
+- Projects
+  - [Graphics Playground](https://graphics-playground.com/)
+  - [DUMP+CHASE](https://dump-n-chase.com/)
+- Misc.
+  - [LinkedIn](https://www.linkedin.com/in/michaelbeebe9/)
+  - [GitHub](https://github.com/mpb9)
 
 ## :rocket: **Deployment:**
 

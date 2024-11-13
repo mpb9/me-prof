@@ -6,9 +6,9 @@ export const STUFF_LIST = [
   // MARK: Code
   Stuff.codeInstance('GitHub', 'https://github.com/mpb9', '', 'dev', Icon.GitBranch, true, true),
   Stuff.codeInstance(
-    "This Site's GitHub",
+    "My Personal Site's Codebase",
     'https://github.com/mpb9/me-prof',
-    'repo for my personal website',
+    'github repository for my personal website',
     'both',
     Icon.Star,
     true,
@@ -17,7 +17,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'Dump N Chase',
     'https://dump-n-chase.com/',
-    'NHL statistical modeling project',
+    'national hockey league statistical modeling project',
     'dev',
     Icon.Hockey,
     true,
@@ -26,7 +26,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'Dump N Chase GitHub',
     'https://github.com/stars/mpb9/lists/dumpnchase',
-    'list of NHL statistical modeling project repos (including backend and retired code)',
+    'list of nhl statistical modeling project code repositories - including backend and retired code',
     'dev',
     Icon.Hockey,
     true,
@@ -35,7 +35,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'Graphics Playground',
     'https://graphics-playground.com/',
-    '2d graphics project',
+    '2d computer graphics project where users draw shapes/lines/curves, manipulate images, and more! (using a custom-built graphics library)',
     'dev',
     Icon.Shapes,
     true,
@@ -44,7 +44,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'Graphics Playground GitHub',
     'https://github.com/stars/mpb9/lists/graphics',
-    'list of 2d graphics project repos',
+    "all of my 2d graphics project's repositories",
     'dev',
     Icon.Shapes,
     true,
@@ -53,7 +53,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'PinPal GitHub',
     'https://github.com/stars/mpb9/lists/pinpal',
-    "ongoing map project's repos",
+    "repositories for ongoing project using google maps api to create, save, and share maps of 'pins' (places)",
     'dev',
     Icon.MapPin,
     true,
@@ -62,7 +62,7 @@ export const STUFF_LIST = [
   Stuff.codeInstance(
     'youRL GitHub',
     'https://github.com/stars/mpb9/lists/yourl',
-    'repos for full-stack social media site i created to share links once a day with friends',
+    'repositories for full-stack social media site i created to share links once a day with friends',
     'dev',
     Icon.Link,
     false,
@@ -284,13 +284,49 @@ export const STUFF_LIST = [
     false,
     true
   ),
+  Stuff.musicInstance(
+    'Classic Rock Playlist',
+    'https://open.spotify.com/playlist/7nGSYp1yIzin030S1YrN1t?si=886a58973593442a',
+    '',
+    'cool',
+    Icon.VinylRecord,
+    false,
+    true
+  ),
+  Stuff.musicInstance(
+    '90s/00s Rock Playlist',
+    'https://open.spotify.com/playlist/4pU9dQuMcyE1THFvzmthw8?si=d8e9f1417c584d55',
+    '',
+    'cool',
+    Icon.CassetteTape,
+    false,
+    true
+  ),
+  Stuff.musicInstance(
+    'Party/Fun Playlist',
+    'https://open.spotify.com/playlist/2Le9cFQvG0cCFroDfV72jl?si=c986567fba1c460b',
+    '',
+    'cool',
+    Icon.BeerStein,
+    false,
+    true
+  ),
+  Stuff.musicInstance(
+    'Rap Playlist',
+    'https://open.spotify.com/playlist/0jGrHUBUybXLZDgcGO6Yau?si=7d604b8971cb487b',
+    '',
+    'cool',
+    Icon.MicrophoneStage,
+    false,
+    true
+  ),
 
   // MARK: Maps
   Stuff.mapsInstance('Google Maps', 'https://maps.google.com', '', '', Icon.MapTrifold, true, false),
   Stuff.mapsInstance(
     'NYC',
     'https://www.google.com/maps/d/viewer?mid=1-wa0oQbqWeMILNOMbXYEsHrFHouwpQg&ll=40.73701000765635%2C-73.991733817946&z=13',
-    'created to track my favorite food spots and places to check out in NYC',
+    'created to track my favorite food spots and places to check out in New York',
     'cool',
     Icon.City,
     true,
@@ -315,7 +351,7 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.mapsInstance(
-    'Ashville',
+    'Asheville',
     'https://www.google.com/maps/d/viewer?hl=en&mid=1rD-47naM8GewRetH5wrZvWBhyjZ1dFc&ll=35.587787441791896%2C-82.56694757663533&z=14',
     '(mostly breweries)',
     'cool',
