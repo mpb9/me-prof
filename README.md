@@ -2,15 +2,11 @@
 
 ## :link: **Links:**
 
-- Personal Website
-  - [Homepage](https://michael-beebe.com/)
-  - [My Development Projects / Tools / Resources](https://michael-beebe.com/dev/)
-  - [Stuff I Think is Cool](https://michael-beebe.com/stuff/)
-  - [Custom New Tab Landing Page](https://michael-beebe.com/new-tab/)
 - Projects
+  - [Personal Website](https://michael-beebe.com/)
   - [Graphics Playground](https://graphics-playground.com/)
   - [DUMP+CHASE](https://dump-n-chase.com/)
-- Misc.
+- Profiles
   - [LinkedIn](https://www.linkedin.com/in/michaelbeebe9/)
   - [GitHub](https://github.com/mpb9)
 

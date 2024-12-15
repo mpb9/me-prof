@@ -30,3 +30,5 @@ tailwind-colors.png
 
 src/static/fonts/*
 src/static/imgs/inactive/*
+
+public/ALL_PLAYERS.json
