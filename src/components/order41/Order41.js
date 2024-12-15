@@ -19,7 +19,6 @@ export default function Order41() {
   const [matchups, setMatchups] = useState(null);
   const [rosters, setRosters] = useState(null);
   const [users, setUsers] = useState(null);
-  // const [allPlayers, setAllPlayers] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
   const refreshRate = 10 * 1000;
 
@@ -70,7 +69,7 @@ export default function Order41() {
         setMatchups(data);
         setError(null);
         setLastUpdated(new Date());
-        console.log(data);
+        // console.log('mike starters', data[0].starters);
       } catch (err) {
         setError(err.message);
       }
@@ -122,7 +121,7 @@ export default function Order41() {
       </div>
 
       {/* MATCHUPS */}
-      {recievedData() ? (
+      {recievedData() && matchups !== null ? (
         <div className='flex flex-col items-center justify-start w-full h-[calc(100vh-4rem)]'>
           <div className='w-[95%] px-4 z-10 h-full'>
             <h1 className='pb-3 pt-5 text-3xl font-bold text-center cursor-default text-[#aed998]'>ROUND ONE</h1>
@@ -130,16 +129,19 @@ export default function Order41() {
             {/* <div className='grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 h-[calc(100%-6rem)]'> */}
             <div className='grid grid-cols-1 gap-2 pb-8 overflow-scroll sm:grid-cols-2 md:grid-cols-3'>
               <TeamScore
+                key={pechId}
                 user={getUserFromUserId(pechId)}
                 roster={getRosterFromUserId(pechId)}
                 matchup={getMatchupFromUserId(pechId)}
               />
               <TeamScore
+                key={mikeId}
                 user={getUserFromUserId(mikeId)}
                 roster={getRosterFromUserId(mikeId)}
                 matchup={getMatchupFromUserId(mikeId)}
               />
               <TeamScore
+                key={slopId}
                 user={getUserFromUserId(slopId)}
                 roster={getRosterFromUserId(slopId)}
                 matchup={getMatchupFromUserId(slopId)}

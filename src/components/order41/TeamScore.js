@@ -12,14 +12,10 @@ export default function TeamScore(props) {
   const [error, setError] = useState(null);
   const [players, setPlayers] = useState(null);
   const [showBench, setShowBench] = useState(true);
-  const [starters, setStarters] = useState(props.matchup.starters);
+  const [starterIds, setStarterIds] = useState(props.matchup.starters);
   const [startersPoints, setStartersPoints] = useState(props.matchup.starters_points);
-  // const [rosterHeight, setRosterHeight] = useState('');
-  // const [starters, setStarters] = useState(null);
-  // const [bench, setBench] = useState(null);
-  // const [taxi, setTaxi] = useState(null);
-  // const [reserve, setReserve] = useState(null);
-  // const [playersPoints, setPlayersPoints] = useState(null);
+  const [playerPoints, setPlayersPoints] = useState(props.matchup.players_points);
+  const [playerIds, setPlayerIds] = useState(props.matchup.players);
 
   useEffect(() => {
     const getPlayers = async () => {
@@ -32,27 +28,23 @@ export default function TeamScore(props) {
           props.roster.taxi
         );
         setPlayers(data);
-
         setError(null);
-        console.log(data);
+        // if (starterIds !== props.matchup.starters) setStarterIds(props.matchup.starters);
+        // if (startersPoints !== props.matchup.starters_points) setStartersPoints(props.matchup.starters_points);
+        // if (playerPoints !== props.matchup.players_points) setPlayersPoints(props.matchup.players_points);
+        // if (playerIds !== props.matchup.players) setPlayerIds(props.matchup.players);
+
+        // if (props.user.user_id === '465557925683785728') {
+        //   console.log(new Date().toLocaleTimeString());
+        //   console.log('mike starterIds:', starterIds);
+        //   console.log('mike startersPoints:', props.matchup.starters_points);
+        // }
       } catch (err) {
         setError(err.message);
       }
     };
     getPlayers();
-    const interval = setInterval(() => {
-      getPlayers();
-    }, 10000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // useEffect(() => {
-  //   if (players !== null) {
-  //     const rH = calcRosterHeight(players.length);
-  //     console.log(rH);
-  //     setRosterHeight(rH);
-  //   }
-  // }, [players]);
+  }, [props]);
 
   const getStarters = () => {
     if (recievedData()) return players.filter((player) => player[3] === 'starter');
@@ -66,15 +58,11 @@ export default function TeamScore(props) {
   const getReserve = () => {
     if (recievedData()) return players.filter((player) => player[3] === 'ir');
   };
-  // const calcRosterHeight = (rH) => {
-  //   const lineHeight = 32;
-  //   const total = (rH + 3) * lineHeight;
-  //   return `${total}px`;
-  // };
 
   const recievedData = () => {
-    return players !== null;
-    // return players !== null && rosterHeight !== '';
+    return (
+      players !== null && starterIds !== null && startersPoints !== null && playerPoints !== null && playerIds !== null
+    );
   };
 
   const toggleBench = () => {
@@ -98,12 +86,10 @@ export default function TeamScore(props) {
 
       {/* ROSTER */}
       {players !== null ? (
-        // ! need to get roster height dynamically based on number of players
-        // <div className='w-full h-[var(--rh)] overflow-scroll rounded-b-lg' style={{ '--rh': rosterHeight }}>
         <div className='w-full rounded-b-lg'>
           {getStarters().map((player, index) => (
             <div
-              key={index}
+              key={player[0]}
               className='flex bg-stone-400 items-center overflow-hidden justify-center w-full h-8 text-base border-2 border-b-0 border-stone-600 sm:text-[0.85rem] lg:text-base'>
               <span className='w-3/4 pl-4 text-left text-stone-900 whitespace-nowrap'>{player[1]}</span>
               <span className='w-1/4 h-full py-1 border-l-2 bg-stone-950 text-stone-200 border-stone-600'>
