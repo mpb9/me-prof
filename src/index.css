@@ -46,6 +46,14 @@
     font-family: 'MarqueeTitle';
     src: url('/src/static/fonts/NeonSpark-ovg0q.otf');
   }
+  @font-face {
+    font-family: 'Envy';
+    src: url('/src/static/fonts/envy/EnvyCode.ttf');
+  }
+  @font-face {
+    font-family: 'Terminess';
+    src: url('/src/static/fonts/terminess/Terminess.ttf');
+  }
 
   *,
   *::before,
@@ -140,6 +148,8 @@
     --font-fascinate: 'Fascinate', sans-serif;
     --font-electro-holic: 'ElectroHolic', sans-serif;
     --font-neon-glow: 'NeonGlow', sans-serif;
+    --font-terminess: 'Terminess', sans-serif;
+    --font-envy: 'Envy', sans-serif;
 
     font-family: var(--font-martian);
 
@@ -157,7 +167,7 @@
     }
 
     .my-font-martian {
-      font-family: var(--font-sans);
+      font-family: var(--font-martian);
     }
     .my-font-marquee-neon {
       font-family: var(--font-marquee-neon);
@@ -176,6 +186,12 @@
     }
     .my-font-electro {
       font-family: var(--font-electro-holic);
+    }
+    .my-font-terminess {
+      font-family: var(--font-terminess);
+    }
+    .my-font-envy {
+      font-family: var(--font-envy);
     }
   }
 
