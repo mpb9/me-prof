@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.8382a93b.css",
-    "main.js": "/static/js/main.e6044016.js",
+    "main.css": "/static/css/main.5dd7d31b.css",
+    "main.js": "/static/js/main.7b1437fd.js",
     "static/media/burgerboy.png": "/static/media/burgerboy.7f37977c6ea5867ecfd7.png",
+    "static/media/Terminess.ttf": "/static/media/Terminess.26d2c4c45cc9bcd8cdf7.ttf",
     "static/media/3270NerdFont-Regular.ttf": "/static/media/3270NerdFont-Regular.1b9f19090adc62418233.ttf",
+    "static/media/EnvyCode.ttf": "/static/media/EnvyCode.ad048534690474e54d57.ttf",
     "static/media/ProFontIIxNerdFont-Regular.ttf": "/static/media/ProFontIIxNerdFont-Regular.e9ca5e065baf1a52821e.ttf",
     "static/media/MartianMonoNerdFont-Regular.ttf": "/static/media/MartianMonoNerdFont-Regular.5875ae91affac8581b67.ttf",
     "static/media/StuffPoster.png": "/static/media/StuffPoster.33629f26bc7ca2deb67b.png",
@@ -26,11 +28,11 @@
     "static/media/Blockletter.otf": "/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/NeonGreenLight.png": "/static/media/NeonGreenLight.7e7f8a68aac4da6f7a10.png",
     "index.html": "/index.html",
-    "main.8382a93b.css.map": "/static/css/main.8382a93b.css.map",
-    "main.e6044016.js.map": "/static/js/main.e6044016.js.map"
+    "main.5dd7d31b.css.map": "/static/css/main.5dd7d31b.css.map",
+    "main.7b1437fd.js.map": "/static/js/main.7b1437fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8382a93b.css",
-    "static/js/main.e6044016.js"
+    "static/css/main.5dd7d31b.css",
+    "static/js/main.7b1437fd.js"
   ]
 }
