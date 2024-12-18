@@ -8,25 +8,25 @@ export default function TheaterEntrance() {
     <>
       <div className='bg-base-100 bg-grid-2-s-1-[#A5B4FC44] brick-wall-border flex h-2/5 w-screen border-x-[2.75rem]'>
         <div
-          className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-7 border-l-[32px] bg-gradient-to-tr pb-2'
+          className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-6 border-l-[32px] bg-gradient-to-tr pb-2'
           style={{ clipPath: 'polygon(18% 0, 100% 10%, 100% 100%, 0 100%, 0 0)' }}>
           {/* GRAPHIC PLAYGROUND */}
           <div
-            className='bg-graphics-poster mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:scale-110'
-            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
+            className='bg-graphics-poster mb-4 h-[65%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
+            style={{ clipPath: 'polygon(0 0%, 100% 5%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://graphics-playground.com/'
               target='_blank'
               rel='noreferrer'
-              className='inline-block h-full w-full'
+              className='inline-block w-full h-full'
               aria-label='Graphic Playground'
             />
           </div>
           {/* COOL STUFF */}
           <div
-            className='bg-stuff-poster h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:scale-110'
-            style={{ clipPath: 'polygon(0 0%, 100% 4%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
-            <NavLink to='/stuff' className='inline-block h-full w-full' aria-label='Cool Stuff' />
+            className='bg-stuff-poster h-[61%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
+            style={{ clipPath: 'polygon(0 0%, 100% 5%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
+            <NavLink to='/stuff' className='inline-block w-full h-full' aria-label='Cool Stuff' />
           </div>
         </div>
 
@@ -43,23 +43,23 @@ export default function TheaterEntrance() {
         </div>
 
         <div
-          className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-7 border-r-[32px] bg-gradient-to-tl pb-2'
+          className='from-base-200 to-base-100 border-base-200 flex h-full w-[26%] items-center justify-center space-x-6 border-r-[32px] bg-gradient-to-tl pb-2'
           style={{ clipPath: 'polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 82%)' }}>
           {/* DEV STUFF */}
           <div
-            className='bg-dev-poster h-[55%] w-1/3 cursor-pointer bg-no-repeat hover:scale-110'
-            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
-            <NavLink to='/dev' className='inline-block h-full w-full' aria-label='Dev Work' />
+            className='bg-dev-poster h-[61%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
+            style={{ clipPath: 'polygon(0 5%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
+            <NavLink to='/dev' className='inline-block w-full h-full' aria-label='Dev Work' />
           </div>
           {/* DUMP+CHASE */}
           <div
-            className='bg-dnc-poster mb-3 h-[58%] w-[35.15%] cursor-pointer bg-no-repeat hover:scale-110'
-            style={{ clipPath: 'polygon(0 4%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
+            className='bg-dnc-poster mb-4 h-[65%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
+            style={{ clipPath: 'polygon(0 5%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://dump-n-chase.com/'
               target='_blank'
               rel='noreferrer'
-              className='inline-block h-full w-full'
+              className='inline-block w-full h-full'
               aria-label='Dump+Chase'
             />
           </div>

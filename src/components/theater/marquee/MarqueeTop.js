@@ -1,5 +1,6 @@
 export default function MarqueeTop() {
   return (
+    // Top Piece - 0-10vh
     <div
       className='top-piece-bg w-1/10 h-1/10 border-x-6 fixed rounded-t-full border-t-4 border-[#3A2A00]'
       style={{ left: '45%', top: '0%' }}>
