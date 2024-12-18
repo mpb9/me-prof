@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dd7d31b.css",
-    "main.js": "/static/js/main.7b1437fd.js",
+    "main.css": "/static/css/main.11efc209.css",
+    "main.js": "/static/js/main.fbd82560.js",
     "static/media/burgerboy.png": "/static/media/burgerboy.7f37977c6ea5867ecfd7.png",
     "static/media/Terminess.ttf": "/static/media/Terminess.26d2c4c45cc9bcd8cdf7.ttf",
     "static/media/3270NerdFont-Regular.ttf": "/static/media/3270NerdFont-Regular.1b9f19090adc62418233.ttf",
@@ -19,7 +19,6 @@
     "static/media/DnCPoster.png": "/static/media/DnCPoster.33e0dfb8d6672933fb23.png",
     "static/media/AnkhSanctuary-PVK0B.ttf": "/static/media/AnkhSanctuary-PVK0B.14b8d3aaa658b8f9ff7a.ttf",
     "static/media/BrickWall.png": "/static/media/BrickWall.d50ed081e69a70a9a1e6.png",
-    "static/media/sleeper-green.png": "/static/media/sleeper-green.606897960332540d0a91.png",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "static/media/Fascinate.ttf": "/static/media/Fascinate.8c324f34f849addff0f9.ttf",
     "static/media/NeonSpark-ovg0q.otf": "/static/media/NeonSpark-ovg0q.8d1495812fdf688ea16e.otf",
@@ -28,11 +27,11 @@
     "static/media/Blockletter.otf": "/static/media/Blockletter.1148b96b8d22acea8b8c.otf",
     "static/media/NeonGreenLight.png": "/static/media/NeonGreenLight.7e7f8a68aac4da6f7a10.png",
     "index.html": "/index.html",
-    "main.5dd7d31b.css.map": "/static/css/main.5dd7d31b.css.map",
-    "main.7b1437fd.js.map": "/static/js/main.7b1437fd.js.map"
+    "main.11efc209.css.map": "/static/css/main.11efc209.css.map",
+    "main.fbd82560.js.map": "/static/js/main.fbd82560.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dd7d31b.css",
-    "static/js/main.7b1437fd.js"
+    "static/css/main.11efc209.css",
+    "static/js/main.fbd82560.js"
   ]
 }
