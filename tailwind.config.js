@@ -58,8 +58,6 @@ module.exports = {
         'dnc-poster': "url('/src/static/imgs/posters/DnCPoster.png')",
         'box-office-border': "url('/src/static/imgs/BoxOfficeBorder.png')",
         cloud: "url('/src/static/imgs/Cloud.jpg')",
-        sleeper: "url('/src/static/imgs/order41/sleeper.png')",
-        'sleeper-green': "url('/src/static/imgs/order41/sleeper-green.png')",
       },
       boxShadow: {
         'neon-yellow-in': '0 0 15px 0px yellow inset',

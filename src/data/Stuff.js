@@ -51,6 +51,15 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.codeInstance(
+    'My Fantasy Football League',
+    'https://order-41.com',
+    'since the league im in is so weird, i built a site to accommodate its rules, etc',
+    'dev',
+    Icon.FootballHelmet,
+    true,
+    true
+  ),
+  Stuff.codeInstance(
     'PinPal GitHub',
     'https://github.com/stars/mpb9/lists/pinpal',
     "repositories for ongoing project using google maps api to create, save, and share maps of 'pins' (places)",
