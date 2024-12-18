@@ -6,27 +6,9 @@ export const STUFF_LIST = [
   // MARK: Code
   Stuff.codeInstance('GitHub', 'https://github.com/mpb9', '', 'dev', Icon.GitBranch, true, true),
   Stuff.codeInstance(
-    "My Personal Site's Codebase",
-    'https://github.com/mpb9/me-prof',
-    'github repository for my personal website',
-    'both',
-    Icon.Star,
-    true,
-    true
-  ),
-  Stuff.codeInstance(
     'Dump N Chase',
     'https://dump-n-chase.com/',
     'national hockey league statistical modeling project',
-    'dev',
-    Icon.Hockey,
-    true,
-    true
-  ),
-  Stuff.codeInstance(
-    'Dump N Chase GitHub',
-    'https://github.com/stars/mpb9/lists/dumpnchase',
-    'list of nhl statistical modeling project code repositories - including backend and retired code',
     'dev',
     Icon.Hockey,
     true,
@@ -42,20 +24,38 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.codeInstance(
-    'Graphics Playground GitHub',
-    'https://github.com/stars/mpb9/lists/graphics',
-    "all of my 2d graphics project's repositories",
-    'dev',
-    Icon.Shapes,
-    true,
-    true
-  ),
-  Stuff.codeInstance(
     'My Fantasy Football League',
     'https://order-41.com',
     'since the league im in is so weird, i built a site to accommodate its rules, etc',
     'dev',
     Icon.FootballHelmet,
+    true,
+    true
+  ),
+  Stuff.codeInstance(
+    "My Personal Site's Codebase",
+    'https://github.com/mpb9/me-prof',
+    'github repository for my personal website',
+    'both',
+    Icon.Star,
+    true,
+    true
+  ),
+  Stuff.codeInstance(
+    'Dump N Chase GitHub',
+    'https://github.com/stars/mpb9/lists/dumpnchase',
+    'list of nhl statistical modeling project code repositories - including backend and retired code',
+    'dev',
+    Icon.Hockey,
+    true,
+    true
+  ),
+  Stuff.codeInstance(
+    'Graphics Playground GitHub',
+    'https://github.com/stars/mpb9/lists/graphics',
+    "all of my 2d graphics project's repositories",
+    'dev',
+    Icon.Shapes,
     true,
     true
   ),
