@@ -12,7 +12,7 @@ export default function TheaterEntrance() {
           style={{ clipPath: 'polygon(18% 0, 100% 10%, 100% 100%, 0 100%, 0 0)' }}>
           {/* GRAPHIC PLAYGROUND */}
           <div
-            className='bg-graphics-poster mb-4 h-[65%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
+            className='bg-graphics-poster mb-4 h-[68%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
             style={{ clipPath: 'polygon(0 0%, 100% 5%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://graphics-playground.com/'
@@ -24,7 +24,7 @@ export default function TheaterEntrance() {
           </div>
           {/* COOL STUFF */}
           <div
-            className='bg-stuff-poster h-[61%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
+            className='bg-stuff-poster h-[64%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
             style={{ clipPath: 'polygon(0 0%, 100% 5%, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <NavLink to='/stuff' className='inline-block w-full h-full' aria-label='Cool Stuff' />
           </div>
@@ -47,13 +47,13 @@ export default function TheaterEntrance() {
           style={{ clipPath: 'polygon(0 10%, 100% 0, 100% 100%, 0 100%, 0 82%)' }}>
           {/* DEV STUFF */}
           <div
-            className='bg-dev-poster h-[61%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
+            className='bg-dev-poster h-[64%] w-[36%] cursor-pointer bg-no-repeat hover:scale-110'
             style={{ clipPath: 'polygon(0 5%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <NavLink to='/dev' className='inline-block w-full h-full' aria-label='Dev Work' />
           </div>
           {/* DUMP+CHASE */}
           <div
-            className='bg-dnc-poster mb-4 h-[65%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
+            className='bg-dnc-poster mb-4 h-[68%] w-[38%] cursor-pointer bg-no-repeat hover:scale-110'
             style={{ clipPath: 'polygon(0 5%, 100% 0, 100% 100%, 0 100%)', backgroundSize: '100% 100%' }}>
             <a
               href='https://dump-n-chase.com/'
