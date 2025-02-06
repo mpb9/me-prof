@@ -30,7 +30,7 @@ export default function List(props) {
                   href={item.url}
                   target='_blank'
                   rel='noreferrer'
-                  className={`underline inline-flex items-center underline-offset-2 ${props.category.color[props.themeName].txt} hover:opacity-60`}>
+                  className={`underline inline-flex items-center underline-offset-2 ${props.category.color[props.themeName].txt} hover:opacity-70`}>
                   {item.name}
                   {item.icon !== QuestionMark && item.icon !== props.category.icon ? (
                     <span className='ml-2'>
@@ -47,7 +47,7 @@ export default function List(props) {
                 item.name
               )}
               {item.info ? (
-                <ul className='text-2xs md:text-xs lg:text-sm xl:text-base list-outside mt-2 pb-1 opacity-90 text-[#d9d7d2]'>
+                <ul className='text-2xs md:text-xs lg:text-sm xl:text-base leading-5 md:leading-6 lg:leading-6 xl:leading-7 list-outside mt-1 pb-1 opacity-80 text-[#d9d7d2]'>
                   <li>{item.info}</li>
                 </ul>
               ) : null}

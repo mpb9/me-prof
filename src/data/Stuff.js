@@ -4,7 +4,7 @@ import { CATEGORIES } from './Categories';
 
 export const STUFF_LIST = [
   // MARK: Code
-  Stuff.codeInstance('GitHub', 'https://github.com/mpb9', '', 'dev', Icon.GitBranch, true, true),
+  Stuff.codeInstance('GitHub Profile', 'https://github.com/mpb9', '', 'dev', Icon.GitBranch, true, true),
   Stuff.codeInstance(
     'Dump N Chase',
     'https://dump-n-chase.com/',
@@ -24,16 +24,16 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.codeInstance(
-    'My Fantasy Football League',
+    'Custom Fantasy Football Website',
     'https://order-41.com',
-    'since the league im in is so weird, i built a site to accommodate its rules, etc',
+    "considering the extraordinary complexity of my fantasy league, i found it wise to build/maintain a website that accommodates our lengthy, nuanced set of rules and regulations (yes, i'm the commissioner) (yes, i recognize my culpability in regard to the league's exceedingly idiosyncratic nature)",
     'dev',
     Icon.FootballHelmet,
     true,
     true
   ),
   Stuff.codeInstance(
-    "My Personal Site's Codebase",
+    "This Site's Codebase",
     'https://github.com/mpb9/me-prof',
     'github repository for my personal website',
     'both',
@@ -90,7 +90,7 @@ export const STUFF_LIST = [
   // MARK: Info
   Stuff.infoInstance('Google Drive', 'https://drive.google.com', '', '', Icon.GoogleDriveLogo, true),
   Stuff.infoInstance(
-    'GitHub Resources List',
+    'GitHub Resources',
     'https://github.com/stars/mpb9/lists/resources',
     "list i maintain of resources for web development (including other people's curated lists)",
     'both',
@@ -115,8 +115,8 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.infoInstance(
-    'React Dossier',
-    'https://docs.google.com/document/d/1es5I6-GlpkCMbwxNu6TmUst20lvxuTTDp_LKbbeD-HU/edit?usp=drive_link',
+    'JavaScript Dossier',
+    'https://docs.google.com/document/d/1fTXIJFzwZjFZ50YizmmCjlrgF3R69Q-2roNqglpZce4/edit?usp=drive_link',
     '',
     'dev',
     Icon.FileJs,
@@ -124,11 +124,11 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.infoInstance(
-    'Angular Dossier',
-    'https://docs.google.com/document/d/17gnChX3t3BqgfDnfQhEHerp0qKw6UKpKXOfc5haHY_Q/edit?usp=drive_link',
+    'Python Dossier',
+    'https://docs.google.com/document/d/1MEF8rQegUh775aSp8YdYkCaZkYXfcIiFjJuRM3ugpEE/edit?usp=drive_link',
     '',
     'dev',
-    Icon.AngularLogo,
+    Icon.FilePy,
     false,
     true
   ),
@@ -142,11 +142,20 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.infoInstance(
-    'Python Dossier',
-    'https://docs.google.com/document/d/1MEF8rQegUh775aSp8YdYkCaZkYXfcIiFjJuRM3ugpEE/edit?usp=drive_link',
+    'React Dossier',
+    'https://docs.google.com/document/d/1es5I6-GlpkCMbwxNu6TmUst20lvxuTTDp_LKbbeD-HU/edit?usp=drive_link',
     '',
     'dev',
-    Icon.FilePy,
+    Icon.Atom,
+    false,
+    true
+  ),
+  Stuff.infoInstance(
+    'Angular Dossier',
+    'https://docs.google.com/document/d/17gnChX3t3BqgfDnfQhEHerp0qKw6UKpKXOfc5haHY_Q/edit?usp=drive_link',
+    '',
+    'dev',
+    Icon.AngularLogo,
     false,
     true
   ),
@@ -209,36 +218,36 @@ export const STUFF_LIST = [
 
   // MARK: Movies
   Stuff.moviesInstance(
-    'Letterboxd',
-    'https://letterboxd.com/michaelbeebe/',
-    'my movie diary, reviews, lists, etc',
+    'Letterboxd Profile',
+    'https://letterboxd.com/michaelbeebe',
+    'my film reviews, ratings, lists, logs, stats, etc. (plus just a great site for movie lovers)',
     'cool',
     CATEGORIES.movies.icon,
     true,
     true
   ),
   Stuff.moviesInstance(
-    'Letterboxd Lists',
-    'https://letterboxd.com/michaelbeebe/list/list-list/detail',
-    'directory for my letterboxd movie lists',
+    'Lists & Rankings Directory',
+    'https://letterboxd.com/michaelbeebe/list/main-menu/detail',
+    'customized "main menu" of my 40+ letterboxd lists... featuring: yearly rankings, best of the decade(s), filmographies, soundtracks, genre-specific canons, microgenre-specific canons, trailers, posters, watchlists, an exhaustive catalog of films where characters find themselves stuck in a hole at some juncture, cool title cards, feel good flicks, cinematic experiences that elicit an unmistakably sobering sense of existential dread, and so forth',
     'cool',
-    Icon.ListBullets,
+    Icon.Network,
     true,
     true
   ),
   Stuff.moviesInstance(
-    'Favorite Movies',
-    'https://letterboxd.com/michaelbeebe/list/all-time-favs/',
-    'list of my favorite (approx 40) movies *sorted by release date*',
+    'Favorite Movies of All-Time',
+    'https://letterboxd.com/michaelbeebe/list/all-time-favs',
+    'list of my (approx 40)(which is an intriguing number to appear in back-to-back entries)(see: above) favorite movies **sorted by release date**',
     'cool',
-    CATEGORIES.movies.icon,
+    Icon.ListHeart,
     false,
     true
   ),
   Stuff.moviesInstance(
-    'Favorite Directors',
-    'https://letterboxd.com/michaelbeebe/list/directors-ranked/detail/',
-    'list of my favorite directors *very much a work in progress*',
+    'Director Rankings',
+    'https://letterboxd.com/michaelbeebe/list/directors/detail',
+    "ranked list that includes exactly 40 (hehe just kidding, there's really only ≈20) of my favorite directors **must've seen at least 3 of their films**",
     'cool',
     Icon.MegaphoneSimple,
     false,
@@ -265,7 +274,7 @@ export const STUFF_LIST = [
   Stuff.moviesInstance(
     'Just Watch',
     'https://www.justwatch.com/',
-    'find where to stream movies & tv shows',
+    'find where to stream movies & tv shows - letterboxd started using their api for similar functionality, but i dont know if you need to be a patron to access it',
     'cool',
     Icon.MagnifyingGlass,
     false,
@@ -276,7 +285,7 @@ export const STUFF_LIST = [
 
   // MARK: Music
   Stuff.musicInstance(
-    'Spotify',
+    'Spotify Profile',
     'https://open.spotify.com/user/8hor3sw0w4vz3cl2yopkegyum?si=4e313d075fd84cb5',
     '',
     'cool',
@@ -287,9 +296,18 @@ export const STUFF_LIST = [
   Stuff.musicInstance(
     'Fall Rock Playlist',
     'https://open.spotify.com/playlist/4K8QQrhsItDwUO2akai7mD?si=2h1pOhrCSI6uNQc-YAbS4A',
-    '',
+    'everyone knows fall is the best season for music',
     'cool',
-    Icon.Ghost,
+    Icon.Log,
+    false,
+    true
+  ),
+  Stuff.musicInstance(
+    'Dream Pop / Shoegaze / Art Rock / Proto-Punk (?) Playlist',
+    'https://open.spotify.com/playlist/45YaAu13Zw6bI02Tnzhqec?si=d538224c055446bd',
+    "basically, i'm just on a mission to find every song that reminds me of Mazzy Star - if you have any suggestions, please let me know because omg some of these songs have redefined my taste in music and i can't get enough",
+    'cool',
+    Icon.CloudMoon,
     false,
     true
   ),
@@ -467,7 +485,15 @@ export const STUFF_LIST = [
   ),
 
   // MARK: Career
-  Stuff.careerInstance('LinkedIn', 'https://www.linkedin.com/in/michaelbeebe9', '', '', Icon.ShirtFolded, true, true),
+  Stuff.careerInstance(
+    'LinkedIn Profile',
+    'https://www.linkedin.com/in/michaelbeebe9',
+    '',
+    '',
+    Icon.ShirtFolded,
+    true,
+    true
+  ),
 
   // MARK: Shop
   Stuff.shopInstance('Amazon', 'https://www.amazon.com', '', '', Icon.AmazonLogo, true, false),

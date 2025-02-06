@@ -51,7 +51,7 @@ export default function Marquee() {
         <div className='w-1/4 origin-top-right bg-base-300 shadow-neon-top h-2/3 -skew-y-2'>
           <MarqueeMain text={'ABOUT'} />
           <MarqueeDesc
-            text={['LINKEDIN', 'GITHUB', '', 'RESUME (PDF)', '']}
+            text={['LINKEDIN', 'GITHUB', 'empty_0', 'RESUME (PDF)', 'empty_1']}
             action={[
               'https://www.linkedin.com/in/michaelbeebe9/',
               'https://github.com/mpb9',
@@ -71,7 +71,7 @@ export default function Marquee() {
                 'B.S. COMPUTER SCIENCE, B.A. ECONOMICS',
                 'UNC CHAPEL HILL',
                 'FORMERLY @ GENERAL MOTORS',
-                '',
+                'empty_0',
               ]}
               action={['none', 'none', 'none', 'none', 'empty']}
             />
@@ -81,7 +81,7 @@ export default function Marquee() {
         <div className='w-1/4 origin-top-left bg-clip-border-marquee-r shadow-neon-top h-2/3 skew-y-2'>
           <MarqueeMain text={'CONTACT'} />
           <MarqueeDesc
-            text={['EMAIL', 'PHONE', 'CLICK THE', 'POSTERS 4 MORE!', '']}
+            text={['EMAIL', 'PHONE', 'CLICK THE', 'POSTERS 4 MORE!', 'empty_0']}
             action={['copy', 'copy', 'tip', 'tip', 'empty']}
           />
         </div>

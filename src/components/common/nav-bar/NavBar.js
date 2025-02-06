@@ -10,11 +10,11 @@ NavBar.propTypes = {
 const tooltip_sites = [
   'Dump N Chase',
   'Graphics Playground',
-  'My Fantasy Football League',
-  'Letterboxd',
-  'Spotify',
-  'GitHub',
-  'LinkedIn',
+  'Custom Fantasy Football Website',
+  'Letterboxd Profile',
+  'Spotify Profile',
+  'GitHub Profile',
+  'LinkedIn Profile',
 ];
 
 export default function NavBar(props) {

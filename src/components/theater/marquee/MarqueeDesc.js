@@ -56,7 +56,7 @@ export default function MarqueeDesc(props) {
           if (props.action[index] === 'empty') {
             return (
               <div key={item} className='flex h-[26px] w-full px-9 py-[4.5px] shadow-inner min-h-[26px]'>
-                <button className='w-full cursor-default whitespace-break-spaces overflow-clip text-nowrap'> </button>
+                <div className='w-full cursor-default whitespace-break-spaces overflow-clip text-nowrap'> </div>
               </div>
             );
           }

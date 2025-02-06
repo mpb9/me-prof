@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 export const link_to_home = (
-  <NavLink to='/' className='underline hover:opacity-50'>
+  <NavLink to='/' className='underline hover:opacity-60'>
     michael-beebe.com
   </NavLink>
 );
@@ -9,7 +9,7 @@ export const current_page = (name) => {
 };
 export const link_to_page = (name) => {
   return (
-    <NavLink to={'/' + name} className='underline hover:opacity-50'>
+    <NavLink to={'/' + name} className='underline hover:opacity-60'>
       /{name}
     </NavLink>
   );
