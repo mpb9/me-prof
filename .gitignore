@@ -1,4 +1,9 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# custom
+src/static/fonts/*
+src/static/imgs/inactive/*
+src/static/vids/*
+
+public/ALL_PLAYERS.json
 
 # dependencies
 /node_modules
@@ -23,12 +28,6 @@ yarn-debug.log*
 yarn-error.log*
 
 package-lock.json
-tailwind-colors.png
 
 .vscode
 .vscode/*
-
-src/static/fonts/*
-src/static/imgs/inactive/*
-
-public/ALL_PLAYERS.json

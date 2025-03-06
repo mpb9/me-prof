@@ -254,6 +254,15 @@ export const STUFF_LIST = [
     true
   ),
   Stuff.moviesInstance(
+    'Blank Check Podcast',
+    'https://www.blankcheckpod.com/',
+    'movie podcast about directors and their filmographies',
+    'cool',
+    Icon.Microphone,
+    false,
+    false
+  ),
+  Stuff.moviesInstance(
     '[FILMGRAB]',
     'https://film-grab.com/',
     'movie stills database',
